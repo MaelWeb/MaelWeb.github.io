@@ -326,6 +326,7 @@ p {
     box-shadow: none;
     padding: 0;
     line-height: 20px;
+    display: none;
 }
 .thumbnails-1 .thumbnail-1 section {
     padding-top: 25px;
@@ -346,80 +347,26 @@ p {
     color: #ffffff;
     padding: 3px 0 10px;
 }
-/*------ list-services ------- */
-
-.list-services .thumbnail-1 {
-    background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#f3f3f3), to(#fff), color-stop(.1, #f3f3f3));
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    -webkit-border-bottom-right-radius: 60px 60px;
-    -webkit-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+/*------ member list ------- */
+.member-list img {
+    width: 100%;
+    height: auto;
 }
-.list-services .thumbnail-1:before {
-    content: '';
-    width: 25px;
-    height: 20px;
+.span4 {
     position: relative;
-    bottom: 0;
-    right: 0;
-    -webkit-border-bottom-right-radius: 30px;
-    -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
-    -webkit-transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
 }
-.list-services .thumbnail-1:after {
-    content: '';
-    z-index: -1;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    -webkit-box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
-    -webkit-transform: rotate(0deg) translate(-45px, -20px) skew(20deg);
-}
-.list-services a {
-    margin-bottom: 10px;
-    display: inline-block;
-}
-.list-services p {
-    padding-bottom: 20px;
-}
-.list-services section {
-    padding: 0 20px;
-}
-.list-services li {
+.member-about {
+    text-align: center;
     margin-bottom: 30px;
 }
-.quote-1 {
-    border: medium none;
-    color: #7f7f7f;
-    display: block;
-    margin: 0;
-    padding: 0;
-    position: relative;
+
+.mem-title {
+    margin-bottom: 30px;
 }
-.badge {
-    font-size: 41px;
-    line-height: 44px;
-    width: 67px;
-    text-shadow: 1px 1px #e8eaea;
-    text-align: center;
-    -webkit-border-radius: 36px;
-    -moz-border-radius: 36px;
-    border-radius: 36px;
-    background: #d1cfd0;
-    -webkit-box-shadow: 1px 1px #dddcde;
-    -moz-box-shadow: 1px 1px #dddcde;
-    box-shadow: 1px 1px #dddcde;
-    float: left;
-    margin-right: 18px;
-    color: #1a1a1a;
-    padding: 11px 0;
-    border-right: 1px solid #eaedee;
-    border-bottom: 1px solid #eaedee;
+.thumbnail {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 /*------ lists ------- */
 

@@ -36,12 +36,12 @@
     </script>
 
     <!--[if lt IE 8]>
-      <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+      <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
   <![endif]-->
     <!--[if (gt IE 9)|!(IE)]><!-->
     <!--<![endif]-->
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
@@ -96,53 +96,57 @@
                         <h3 id="titile">Member</h3>
                     </article>
                     <div class="clear"></div>
-                    <ul class="thumbnails thumbnails-1 list-services">
+                    <div class="member-about">
+                        <div class="mem-content">
+                            <h2 class="mem-title">我们...</h2>
+                            <p>我们好像在哪儿见过你记得吗 好像那是一个春天我刚发芽 我走过 没有回头 我记得 我快忘了
+                            </p>
+                            <p>我们好像在哪儿见过你记得吗 记得那是一个夏天盛开如花 我唱歌 没有对我 但我记得 可我快忘了
+                            </p>
+                            <p>我们好像在哪见过你记得吗 好像那是一个秋天夕阳西下 你美得让我不敢和你说话 你经过我时风起浮动我的发
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="thumbnails thumbnails-1 member-list">
                         <li class="span4">
-                            <div class="thumbnail thumbnail-1">
-                                <img src="img/hm.jpg" alt="">
-                                <section> <a href="#" class="link-1">小蜜桔</a>
-                                    <p>脸若银盘，眼似水杏，唇不点而红，眉不画而翠。</p>
-                                </section>
+                            <img src="img/test.jpg" alt="">
+                            <div class="thumbnail thumbnail-1"> <a href="#" class="link-1">小蜜桔</a>
+                                <p>脸若银盘，眼似水杏，唇不点而红，眉不画而翠。</p>
                             </div>
                         </li>
                         <li class="span4">
-                            <div class="thumbnail thumbnail-1">
-                                <img src="img/xy.png" alt="">
-                                <section> <a href="#" class="link-1">小甜瓜</a>
-                                    <p>一笑倾人国，再笑倾人城！！</p>
-                                </section>
+
+                            <img src="img/test1.jpg" alt="">
+                            <div class="thumbnail thumbnail-1"> <a href="#" class="link-1">小甜瓜</a>
+                                <p>一笑倾人国，再笑倾人城！！</p>
                             </div>
                         </li>
                         <li class="span4">
-                            <div class="thumbnail thumbnail-1">
-                                <img src="img/lm.png" alt="">
-                                <section> <a href="#" class="link-1">小蜜桃</a>
-                                    <p>若把西湖比西子，浓妆淡抹总相宜。</p>
-                                </section>
+                            <img src="img/test.jpg" alt="">
+                            <div class="thumbnail thumbnail-1"> <a href="#" class="link-1">小蜜桃</a>
+                                <p>若把西湖比西子，浓妆淡抹总相宜。</p>
+
                             </div>
                         </li>
                         <li class="span4">
+                            <img src="img/test1.jpg" alt="">
                             <div class="thumbnail thumbnail-1">
-                                <img src="img/xtt.png" alt="">
-                                <section> <a href="#" class="link-1">小樱桃</a>
-                                    <p>北方有佳人，绝世而独立。</p>
-                                </section>
+                                <a href="#" class="link-1">小樱桃</a>
+                                <p>北方有佳人，绝世而独立。</p>
                             </div>
                         </li>
                         <li class="span4">
+                            <img src="img/test.jpg" alt="">
                             <div class="thumbnail thumbnail-1">
-                                <img src="img/wd.jpg" alt="">
-                                <section> <a href="#" class="link-1">小龙眼</a>
-                                    <p>宁不知倾城与倾国？ 佳人难再得</p>
-                                </section>
+                                <a href="#" class="link-1">小龙眼</a>
+                                <p>宁不知倾城与倾国？ 佳人难再得</p>
                             </div>
                         </li>
                         <li class="span4">
+                            <img src="img/test1.jpg" alt="">
                             <div class="thumbnail thumbnail-1">
-                                <img src="img/page2-img6.jpg" alt="">
-                                <section> <a href="#" class="link-1">大芒果 </a>
-                                    <p>此处省略一个字。。。</p>
-                                </section>
+                                <a href="#" class="link-1">大芒果 </a>
+                                <p>此处省略一个字。。。</p>
                             </div>
                         </li>
                     </ul>
@@ -173,6 +177,15 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+    $(".member-list li").hover(function() {
+        $(this).find("img").css("opacity", "0");
+        $(this).find(".thumbnail").css("display", "block");
+    }, function() {
+        $(this).find("img").css("opacity", "1");
+        $(this).find(".thumbnail").css("display", "none");
+    });
+    </script>
 </body>
 
 </html>
