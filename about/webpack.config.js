@@ -14,7 +14,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, "pack"),
-        publicPath: "pack",
+        publicPath: "about",
         filename: "main.min.js",
     },
     resolve: {
