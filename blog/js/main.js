@@ -55,6 +55,11 @@
         }
     });
 
+    // add animantion
+    $("a[href*=blog]").click(function(event) {
+        $(".main-body").addClass('fadeOut');
+    });
+
     // Auto hide main nav menus
     function autoHideMenus(){
         var max_width = $('.nav-container-inner').width() - 10;
