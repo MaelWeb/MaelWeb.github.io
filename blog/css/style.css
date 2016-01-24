@@ -569,6 +569,10 @@ body {
   border-top: 4px solid #34495e;
   -webkit-box-shadow: 0 0 4px #666;
   box-shadow: 0 0 4px #666;
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -ms-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s;
 }
 #header-inner .subtitle {
   font-size: 12px;
@@ -1233,7 +1237,7 @@ body {
   clear: both;
 }
 .article-summary {
-  width: 33%;
+  width: 50%;
   float: left;
 }
 .article-summary a {
@@ -1508,17 +1512,16 @@ a.article-title:hover {
 }
 .article-tag-list-item {
   display: inline;
-  margin-right: 10px;
   font-size: 12px;
+}
+.article-tag-list-item:last-child .article-tag-list-link:after {
+  content: "";
 }
 .article-tag-list-link {
   font-size: 12px;
 }
 .article-tag-list-link:after {
   content: ",";
-}
-.article-tag-list-link:last-child:after {
-  content: "";
 }
 .article-comment-link i,
 .article-share-link i {
@@ -1802,25 +1805,33 @@ a.article-title:hover {
   padding: 30px;
 }
 #footer #back-to-top {
-  background: #34495e;
-  color: #777;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  color: #fff;
   overflow: hidden;
   text-align: center;
   width: 60px;
-  height: 30px;
+  height: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: 1px solid #fff;
   display: block;
   margin: 0 auto -30px;
-  -webkit-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -ms-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s;
 }
 #footer #back-to-top:hover {
-  color: #444;
+  color: #1abc9c;
+  border: 1px solid #1abc9c;
 }
 #footer #back-to-top i {
   font-size: 38px;
-  line-height: 22px;
+  line-height: 60px;
 }
 #footer .logo {
   width: 68.8px;
@@ -1921,6 +1932,16 @@ i.icon:before {
     -webkit-background-size: 24px 24px;
     -moz-background-size: 24px 24px;
     background-size: 24px 24px;
+  }
+}
+@media only screen and (min-width: 1501px) {
+  .article-summary {
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .container-inner {
+    width: 90%;
   }
 }
 @media only screen and (min-width: 960px) {
