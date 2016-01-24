@@ -47,7 +47,7 @@
         } else {
             $('#header-inner').css("top", "0px");
         }
-        if (scrolling === navHeight) {
+        if (scrolling < navHeight) {
             $('#header-inner').css("top", "0px");
         }
 
