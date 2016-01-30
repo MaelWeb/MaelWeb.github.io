@@ -1,113 +1,25 @@
-<!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <title>MaelWeb</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/my_logo2px.png">
-    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="/images/my_logo2px.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/my_logo4x.png">
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?4e62d31ed1c5f06a04f3d5fa1e253b25";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-    <style type="text/css">
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .init-page {
-        position: relative;
-        height: 100%;
-        font-family: "Roboto", sans-serif;
-        font-size: 15px;
-    }
-
-    .wrap {
-        width: 200px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -190px 0 0 -100px;
-        text-align: center;
-    }
-
-    a {
-        color: #9F9F9F;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #000;
-    }
-
-    a:after {
-        margin-right: 2px;
-        margin-left: 2px;
-        content: '/';
-        color: #000;
-    }
-
-    @-webkit-keyframes zoomIn {
-        from {
-            opacity: 0;
-            -webkit-transform: scale3d(.3, .3, .3);
-            transform: scale3d(.3, .3, .3);
-        }
-        50% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes zoomIn {
-        from {
-            opacity: 0;
-            -webkit-transform: scale3d(.3, .3, .3);
-            transform: scale3d(.3, .3, .3);
-        }
-        50% {
-            opacity: 1;
-        }
-    }
-
-    .animated {
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-
-    .zoomIn {
-        -webkit-animation-name: zoomIn;
-        animation-name: zoomIn;
-    }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>React Transition</title>
+    <meta name="description" content="Google's material design UI components built with React.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+    <link rel="stylesheet" type="text/css" href="./build/style.css" />
 </head>
 
 <body>
-    <div class="init-page">
-        <div class="wrap">
-            <img src="about/images/me.png" alt="my" class="animated zoomIn">
-            <h1>MaelWeb</h1>
-            <h3>Web Engineer</h3>
-            <a href="/blog">BLOG</a>
-            <a href="/about"> RESUME</a>
-            <p>博客正在调整中...</p>
+    <div class="layout">
+        <div class="mac" id="mac">
+
         </div>
+        <div class="mac-bottom"></div>
     </div>
+    <script src="./build/common.js"></script>
+    <script src="./build/app.js"></script>
 </body>
 
 </html>
