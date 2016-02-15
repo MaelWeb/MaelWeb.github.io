@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>面试哪些事－CSS篇 | Under 7℃</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="description" content="本文前端面试题的一个分支。姐妹篇：
+
+面试哪些事－HTML篇
+面试哪些事－javascript篇
+
+ 下面开始正文： 
+
+介绍一下CSS的盒子模型？
+
+（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+
+
+
+
+CSS选">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试哪些事－CSS篇">
+<meta property="og:url" content="hynal.com/2016/02/15/面试哪些事－CSS篇/index.html">
+<meta property="og:site_name" content="Under 7℃">
+<meta property="og:description" content="本文前端面试题的一个分支。姐妹篇：
+
+面试哪些事－HTML篇
+面试哪些事－javascript篇
+
+ 下面开始正文： 
+
+介绍一下CSS的盒子模型？
+
+（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+
+
+
+
+CSS选">
+<meta property="og:updated_time" content="2016-02-15T10:11:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面试哪些事－CSS篇">
+<meta name="twitter:description" content="本文前端面试题的一个分支。姐妹篇：
+
+面试哪些事－HTML篇
+面试哪些事－javascript篇
+
+ 下面开始正文： 
+
+介绍一下CSS的盒子模型？
+
+（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+
+
+
+
+CSS选">
+  
+    <link rel="alternative" href="/atom.xml" title="Under 7℃" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/blog/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xqfgq.com1.z0.glb.clouddn.com/logo.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Under 7℃</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">游走在技术与艺术的边缘</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/blog">主页</a></li>
+				        
+							<li><a href="/blog/archives">所有文章</a></li>
+				        
+							<li><a href="/about">关于我</a></li>
+				        
+				        	<li>
+<div id="search-form-wrap">
+    <div class="search-form">
+        <input type="text" class="st-default-search-input search-form-input" placeholder="搜索" />
+    </div>
+    <script type="text/javascript">
+    (function(w,d,t,u,n,s,e) {w['SwiftypeObject']=n;w[n]=w[n]||function() {
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+    _st('install','E1j2z_RzVHxcDyZDeS_B','2.0.0');
+    </script>
+    <style>
+        .st-ui-injected-overlay-container,
+        .st-ui-injected-overlay-container *:not(select) {
+            font-family: inherit !important;
+        }
+        section.st-ui-content.st-search-results a.st-ui-result .st-ui-type-heading {
+            color: #000 !important;
+        }
+        .st-ui-injected-overlay-container .st-ui-header input[type="text"]:focus {
+            border-bottom: 2px solid #000;
+        }
+        .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link {
+            color: #000;
+        }
+        .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link span.st-ui-arrow {
+            border-color: #000;
+        }
+    </style>
+</div>
+</li>
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								
+								<a class="github" target="_blank" href="https://github.com/MaelWeb" title="github">github</a>
+								
+					        
+								
+								<a class="mail"  href="mailto:mael.liang@live.com" title="mail">mail</a>
+								
+					        
+						</div>
+					</nav>
+				</section>
+
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/blog/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/blog/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/blog/tags/代码风格/" style="font-size: 10px;">代码风格</a> <a href="/blog/tags/优化/" style="font-size: 10px;">优化</a> <a href="/blog/tags/前端/" style="font-size: 15px;">前端</a> <a href="/blog/tags/面试/" style="font-size: 20px;">面试</a>
+					</div>
+				</section>
+				
+
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://gsisland.com/">G&#39;s island</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.doubis.com/">Kris Lee</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Under 7℃</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://7xqfgq.com1.z0.glb.clouddn.com/logo.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Under 7℃</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">游走在技术与艺术的边缘</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/blog">主页</a></li>
+		        
+					<li><a href="/blog/archives">所有文章</a></li>
+		        
+					<li><a href="/about">关于我</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/MaelWeb" title="github">github</a>
+			        
+						<a class="mail" target="_blank" href="/blog/mael.liang@live.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-面试哪些事－CSS篇" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/blog/2016/02/15/面试哪些事－CSS篇/" class="article-date">
+  	<time datetime="2016-02-15T06:37:34.000Z" itemprop="datePublished">2016-02-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面试哪些事－CSS篇
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/面试/">面试</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/blog/categories/面试/">面试</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个分支。<br>姐妹篇：</p>
+<ul>
+<li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E5%93%AA%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试哪些事－HTML篇</a></li>
+<li><a href="http://hymal.com/blog/2016/01/28/面试哪些事－HTML篇/" target="_blank" rel="external">面试哪些事－javascript篇</a></li>
+</ul>
+<p><br><br><strong> 下面开始正文： </strong></p>
+<ul>
+<li><p>介绍一下CSS的盒子模型？</p>
+<blockquote>
+<p>（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;<br>（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>CSS选择符有哪些？哪些属性可以继承？</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>选择符</p>
+<ul>
+<li>id选择器（ # myid）</li>
+<li>类选择器（.myclassname）</li>
+<li>标签选择器（div, h1, p）</li>
+<li>相邻选择器（h1 + p）</li>
+<li>子选择器（ul &gt; li）</li>
+<li>后代选择器（li a）</li>
+<li>通配符选择器（ * ）</li>
+<li>属性选择器（a[rel = “external”]）</li>
+<li>伪类选择器（a: hover, li: nth - child）</li>
+</ul>
+</li>
+<li><p>可继承的样式： font-size font-family color, UL LI DL DD DT;</p>
+</li>
+<li><p>不可继承的样式：border padding margin width height ;</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>CSS优先级算法如何计算？</p>
+<blockquote>
+<ul>
+<li>优先级就近原则，同权重情况下样式定义最近者为准;</li>
+<li>载入样式以最后载入的定位为准;</li>
+<li>优先级为:<ul>
+<li>!important &gt;  id &gt; class &gt; tag</li>
+<li>important 比 内联优先级高</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>CSS3新增伪类有那些？</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>CSS3新增伪类举例：<ul>
+<li>p:first-of-type 选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</li>
+<li>p:last-of-type  选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</li>
+<li>p:only-of-type  选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</li>
+<li>p:only-child    选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。</li>
+<li>p:nth-child(2)  选择属于其父元素的第二个子元素的每个 &lt;p&gt; 元素。</li>
+<li>:enabled        :disabled 控制表单控件的禁用状态。</li>
+<li>:checked        单选框或复选框被选中。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？<blockquote>
+<p>给div设置一个宽度，然后添加margin:0 auto属性</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">div</span><span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">200px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span> auto</span></span>;</span><br><span class="line"> &#125;</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>居中一个浮动元素<br>    确定容器的宽高 宽500 高 300 的层<br>    设置层的外边距<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.div</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">500px</span> </span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">300px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"> -<span class="number">150px</span> <span class="number">0</span> <span class="number">0</span> -<span class="number">250px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value">relativ</span><br><span class="line">    left:<span class="number">50%</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">50%</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>让绝对定位的div居中<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.div</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value"> none</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li>display有哪些值？说明他们的作用。<blockquote>
+<p>block 象块类型元素一样显示。<br>none 缺省值。象行内元素类型一样显示。<br>inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。<br>list-item 象块类型元素一样显示，并添加样式列表标记。</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>position的值relative和absolute定位原点是？</p>
+<blockquote>
+<p>absolute<br>&nbsp;&nbsp;&nbsp;&nbsp;生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。<br>fixed （老IE不支持）<br>  &nbsp;&nbsp;&nbsp;&nbsp;生成绝对定位的元素，相对于浏览器窗口进行定位。<br>relative<br>  &nbsp;&nbsp;&nbsp;&nbsp;生成相对定位的元素，相对于其正常位置进行定位。<br>static<br>  &nbsp;&nbsp;&nbsp;&nbsp;默认值。没有定位，元素出现在正常的流中<br>  &nbsp;&nbsp;&nbsp;&nbsp;（忽略 top, bottom, left, right z-index 声明）。<br>inherit<br>  &nbsp;&nbsp;&nbsp;&nbsp;规定从父元素继承 position 属性的值。</p>
+</blockquote>
+</li>
+<li><p>CSS3有哪些新特性？</p>
+</li>
+</ul>
+<blockquote>
+<p>CSS3实现圆角（border-radius:8px），<br>阴影（box-shadow:10px），<br>文字特效（text-shadow、），<br>线性渐变（gradient），<br>旋转（transform）<br>transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜<br>增加了更多的CSS选择器<br>多背景 rgba</p>
+</blockquote>
+<ul>
+<li><p>请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</p>
+</li>
+<li><p>用纯CSS创建一个三角形的原理是什么？</p>
+</li>
+</ul>
+<blockquote>
+<p>把上、左、右三条边隐藏掉（颜色设为 transparent）<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#demo</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">border-width</span>:<span class="value"> <span class="number">20px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">border-style</span>:<span class="value"> solid</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">border-color</span>:<span class="value"> transparent transparent red transparent</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li>一个满屏 品 字布局 如何设计?</li>
+</ul>
+<blockquote>
+<p>简单的方式：</p>
+<ul>
+<li>上面的div宽100%，</li>
+<li>下面的两个div分别宽50%，</li>
+<li>然后用float或者inline使其不换行即可</li>
+</ul>
+</blockquote>
+<ul>
+<li>常见兼容性问题？</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.</p>
+</li>
+<li><p>浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</p>
+</li>
+<li><p>IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。</p>
+</li>
+<li><p>浮动ie产生的双倍距离</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#box</span><span class="rules">&#123; <span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>; <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">10px</span></span></span>; <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入 —— _display:inline;将其转化为行内属性。(_这个符号只有ie6会识别)</p>
+<ul>
+<li>渐进识别的方式，从总体中逐渐排除局部。</li>
+</ul>
+<p>首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。<br>接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.bb &#123;</span><br><span class="line">    background-color:#f1ee18; /*所有识别*/</span><br><span class="line">    .background-color:#00deff\9; /*IE6、7、8识别*/</span><br><span class="line">    +background-color:#a200ff; /*IE6、7识别*/</span><br><span class="line">    _background-color:#1e0bd1; /*IE6识别*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>IE下,可以使用获取常规属性的方法来获取自定义属性,也可以使用getAttribute()获取自定义属性;Firefox下,只能使用getAttribute()获取自定义属性。<br>解决方法:统一通过getAttribute()获取自定义属性。</p>
+</li>
+<li><p>IE下,even对象有x,y属性,但是没有pageX,pageY属性;Firefox下,event对象有pageX,pageY属性,但是没有x,y属性。<br>解决方法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数。</p>
+</li>
+<li><p>Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决。</p>
+</li>
+<li><p>超链接访问过后hover样式就不出现了 被点击访问过的超链接样式不在具有hover和active了<br>解决方法是改变CSS属性的排列顺序:<br>L-V-H-A :  a:link {} a:visited {} a:hover {} a:active {}</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</p>
+</li>
+<li><p>经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</p>
+</li>
+<li><p>为什么要初始化CSS样式。</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。</p>
+</li>
+<li><p>当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。</p>
+</li>
+</ul>
+<p>最简单的初始化方法： * {padding: 0; margin: 0;} （强烈不建议）</p>
+<p>淘宝的样式初始化代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span>, <span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span>, <span class="tag">hr</span>, <span class="tag">p</span>, <span class="tag">blockquote</span>, <span class="tag">dl</span>, <span class="tag">dt</span>, <span class="tag">dd</span>, <span class="tag">ul</span>, <span class="tag">ol</span>, <span class="tag">li</span>, <span class="tag">pre</span>, <span class="tag">form</span>, <span class="tag">fieldset</span>, <span class="tag">legend</span>, <span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">textarea</span>, <span class="tag">th</span>, <span class="tag">td</span> <span class="rules">&#123; <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>; <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">body</span>, <span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">select</span>, <span class="tag">textarea</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font</span>:<span class="value"><span class="number">12px</span>/<span class="number">1.5</span>tahoma, arial, \<span class="number">5</span>b8b\<span class="number">4</span>f53</span></span>; &#125;</span></span><br><span class="line"><span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span><span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">100%</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">address</span>, <span class="tag">cite</span>, <span class="tag">dfn</span>, <span class="tag">em</span>, <span class="tag">var</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-style</span>:<span class="value">normal</span></span>; &#125;</span></span><br><span class="line"><span class="tag">code</span>, <span class="tag">kbd</span>, <span class="tag">pre</span>, <span class="tag">samp</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-family</span>:<span class="value">couriernew, courier, monospace</span></span>; &#125;</span></span><br><span class="line"><span class="tag">small</span><span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">12px</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">ul</span>, <span class="tag">ol</span> <span class="rules">&#123; <span class="rule"><span class="attribute">list-style</span>:<span class="value">none</span></span>; &#125;</span></span><br><span class="line"><span class="tag">a</span> <span class="rules">&#123; <span class="rule"><span class="attribute">text-decoration</span>:<span class="value">none</span></span>; &#125;</span></span><br><span class="line"><span class="tag">a</span><span class="pseudo">:hover</span> <span class="rules">&#123; <span class="rule"><span class="attribute">text-decoration</span>:<span class="value">underline</span></span>; &#125;</span></span><br><span class="line"><span class="tag">sup</span> <span class="rules">&#123; <span class="rule"><span class="attribute">vertical-align</span>:<span class="value">text-top</span></span>; &#125;</span></span><br><span class="line"><span class="tag">sub</span><span class="rules">&#123; <span class="rule"><span class="attribute">vertical-align</span>:<span class="value">text-bottom</span></span>; &#125;</span></span><br><span class="line"><span class="tag">legend</span> <span class="rules">&#123; <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#000</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">fieldset</span>, <span class="tag">img</span> <span class="rules">&#123; <span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">0</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">select</span>, <span class="tag">textarea</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">100%</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">table</span> <span class="rules">&#123; <span class="rule"><span class="attribute">border-collapse</span>:<span class="value">collapse</span></span>; <span class="rule"><span class="attribute">border-spacing</span>:<span class="value"><span class="number">0</span></span></span>; &#125;</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li>absolute的containing block(容器块)计算方式跟正常流有什么不同？</li>
+</ul>
+<blockquote>
+<p>无论属于哪种，都要先找到其祖先元素中最近的 position 值不为 static 的元素，然后再判断：<br>1、若此元素为 inline 元素，则 containing block 为能够包含这个元素生成的第一个和最后一个 inline box 的 padding box (除 margin, border 外的区域) 的最小矩形；<br>2、否则,则由这个祖先元素的 padding box 构成。如果都找不到，则为 initial containing block。<br>补充：</p>
+<ol>
+<li>static(默认的)/relative：简单说就是它的父元素的内容框（即去掉padding的部分）</li>
+<li>absolute: 向上找最近的定位为absolute/relative的元素</li>
+<li>fixed: 它的containing block一律为根元素(html/body)，根元素也是initial containing block</li>
+</ol>
+</blockquote>
+<ul>
+<li>CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</li>
+</ul>
+<ul>
+<li><p>position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</p>
+</li>
+<li><p>对BFC规范(块级格式化上下文：block formatting context)的理解？</p>
+</li>
+</ul>
+<blockquote>
+<p>（W3C CSS 2.1 规范中的一个概念,它是一个独立容器，决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用。）<br> 一个页面是由很多个 Box 组成的,元素的类型和 display 属性,决定了这个 Box 的类型。<br> 不同类型的 Box,会参与不同的 Formatting Context（决定如何渲染文档的容器）,因此Box内的元素会以不同的方式渲染,也就是说BFC内部的元素和外部的元素不会互相影响。</p>
+</blockquote>
+<ul>
+<li>css定义的权重</li>
+</ul>
+<blockquote>
+<p>以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：</p>
+<p>/<em>权重为1</em>/<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>/<em>权重为10</em>/<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.class1</span> <span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>/<em>权重为100</em>/<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#id1</span> <span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>/<em>权重为100+1=101</em>/<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#id1</span> <span class="tag">div</span><span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>/<em>权重为10+1=11</em>/<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.class1</span> <span class="tag">div</span><span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>/<em>权重为10+10+1=21</em>/<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.class1</span> <span class="class">.class2</span> <span class="tag">div</span><span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现</p>
+</blockquote>
+<ul>
+<li>请解释一下为什么会出现浮动和什么时候需要清除浮动？清除浮动的方式</li>
+</ul>
+<ul>
+<li>移动端的布局用过媒体查询吗？</li>
+</ul>
+<ul>
+<li>使用 CSS 预处理器吗？喜欢那个？</li>
+</ul>
+<blockquote>
+<p>SASS (SASS、LESS没有本质区别，只因为团队前端都是用的SASS)</p>
+</blockquote>
+<ul>
+<li><p>CSS优化、提高性能的方法有哪些？</p>
+</li>
+<li><p>浏览器是怎样解析CSS选择器的？</p>
+</li>
+<li><p>在网页中的应该使用奇数还是偶数的字体？为什么呢？</p>
+</li>
+<li><p>margin和padding分别适合什么场景使用？</p>
+</li>
+<li><p>抽离样式模块怎么写，说出思路，有无实践经验？[阿里航旅的面试题]</p>
+</li>
+<li><p>元素竖向的百分比设定是相对于容器的高度吗？</p>
+</li>
+<li><p>全屏滚动的原理是什么？用到了CSS的那些属性？</p>
+</li>
+<li><p>什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</p>
+</li>
+<li><p>视差滚动效果，如何给每页做不同的动画？（回到顶部，向下滑动要再次出现，和只出现一次分别怎么做？）</p>
+</li>
+<li><p>::before 和 :after中双冒号和单冒号 有什么区别？解释一下这2个伪元素的作用。</p>
+</li>
+<li><p>如何修改chrome记住密码后自动填充表单的黄色背景 ？</p>
+</li>
+<li><p>你对line-height是如何理解的？</p>
+</li>
+<li><p>设置元素浮动后，该元素的display值是多少？（自动变成display:block）</p>
+</li>
+<li><p>怎么让Chrome支持小于12px 的文字？</p>
+</li>
+<li><p>让页面里的字体变清晰，变细用CSS怎么做？（-webkit-font-smoothing: antialiased;）</p>
+</li>
+<li><p>font-style属性可以让它赋值为“oblique” oblique是什么意思？</p>
+</li>
+<li><p>position:fixed;在android下无效怎么处理？</p>
+</li>
+<li><p>如果需要手动写动画，你认为最小时间间隔是多久，为什么？（阿里）</p>
+</li>
+</ul>
+<blockquote>
+<p>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms</p>
+</blockquote>
+<ul>
+<li>display:inline-block 什么时候会显示间隙？(携程)</li>
+</ul>
+<blockquote>
+<p>移除空格、使用margin负值、使用font-size:0、letter-spacing、word-spacing</p>
+</blockquote>
+<ul>
+<li><p>overflow: scroll时不能平滑滚动的问题怎么处理？</p>
+</li>
+<li><p>有一个高度自适应的div，里面有两个div，一个高度100px，希望另一个填满剩下的高度。</p>
+</li>
+<li><p>png、jpg、gif 这些图片格式解释一下，分别什么时候用。有没有了解过webp？</p>
+</li>
+</ul>
+<ul>
+<li>什么是Cookie 隔离？（或者说：请求资源的时候不要让它带cookie怎么做）</li>
+</ul>
+<blockquote>
+<p>如果静态文件都放在主域名下，那静态文件请求的时候都带有的cookie的数据提交给server的，非常浪费流量，所以不如隔离开。</p>
+<p>因为cookie有域的限制，因此不能跨域提交请求，故使用非主要域名的时候，请求头中就不会带有cookie数据，这样可以降低请求头的大小，降低请求时间，从而达到降低整体请求延时的目的。</p>
+<p>同时这种方式不会将cookie传入Web Server，也减少了Web Server对cookie的处理分析环节，提高了webserver的http请求的解析速度。</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2016/02/15/面试那些事－javascript篇/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          面试那些事－javascript篇
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2016/01/28/面试哪些事－HTML篇/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">面试哪些事－HTML篇</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="面试哪些事－CSS篇" data-title="面试哪些事－CSS篇" data-url="hynal.com/blog/2016/02/15/面试哪些事－CSS篇/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"hynal"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <a id="back-to-top" href="javascript:void(0);" class="iconfont icon-top"></a>
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Under 7℃
+    	</div>
+      <div class="footer-right">
+      		How should I greet thee, with silence and tears.
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: false,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/blog/js/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="/blog/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
