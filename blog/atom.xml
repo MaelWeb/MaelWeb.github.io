@@ -4,7 +4,7 @@
   <subtitle><![CDATA[游走在技术与艺术的边缘]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="hynal.com/"/>
-  <updated>2016-02-22T02:39:27.000Z</updated>
+  <updated>2016-02-22T02:48:25.000Z</updated>
   <id>hynal.com/</id>
   
   <author>
@@ -19,18 +19,18 @@
     <link href="hynal.com/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8Djavascript%E7%AF%87/"/>
     <id>hynal.com/2016/02/15/面试那些事－javascript篇/</id>
     <published>2016-02-15T10:22:48.000Z</published>
-    <updated>2016-02-22T02:39:27.000Z</updated>
+    <updated>2016-02-22T02:48:25.000Z</updated>
     <content type="html"><![CDATA[<p>本文<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个分支。<br>姐妹篇：</p>
 <ul>
-<li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E5%93%AA%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试那些事－HTML篇</a></li>
-<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E5%93%AA%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/">面试那些事－CSS篇</a></li>
+<li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试那些事－HTML篇</a></li>
+<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/">面试那些事－CSS篇</a></li>
 </ul>
 <p><br><br><strong> 下面开始正文： </strong></p>
 <ul>
 <li>介绍js的基本数据类型。</li>
 </ul>
 <blockquote>
-<p>number,string,boolean,object,undefined</p>
+<p>number,string,boolean,undefined</p>
 </blockquote>
 <ul>
 <li>说几条写JavaScript的基本规范？</li>
@@ -718,10 +718,10 @@
     <link href="hynal.com/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/"/>
     <id>hynal.com/2016/02/15/面试那些事－CSS篇/</id>
     <published>2016-02-15T06:37:34.000Z</published>
-    <updated>2016-02-22T02:41:32.000Z</updated>
+    <updated>2016-02-22T02:49:28.000Z</updated>
     <content type="html"><![CDATA[<p>本文<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个分支。<br>姐妹篇：</p>
 <ul>
-<li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E5%93%AA%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试那些事－HTML篇</a></li>
+<li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试那些事－HTML篇</a></li>
 <li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8Djavascript%E7%AF%87/">面试那些事－javascript篇</a></li>
 </ul>
 <p><br><br><strong> 下面开始正文： </strong></p>
@@ -795,12 +795,12 @@
 </li>
 </ul>
 <blockquote>
-<p>居中一个浮动元素<br>    确定容器的宽高 宽500 高 300 的层<br>    设置层的外边距<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.div</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">500px</span> </span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">300px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"> -<span class="number">150px</span> <span class="number">0</span> <span class="number">0</span> -<span class="number">250px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value">relativ</span><br><span class="line">    left:<span class="number">50%</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">50%</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>居中一个浮动元素<br>    确定容器的宽高 宽500 高 300 的层<br>    设置层的外边距<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.div</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">500px</span> </span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">300px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"> -<span class="number">150px</span> <span class="number">0</span> <span class="number">0</span> -<span class="number">250px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value">relative</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">50%</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">50%</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
 <p>让绝对定位的div居中<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.div</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">1200px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value"> none</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <ul>
 <li>display有哪些值？说明他们的作用。<blockquote>
-<p>block 象块类型元素一样显示。<br>none 缺省值。象行内元素类型一样显示。<br>inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。<br>list-item 象块类型元素一样显示，并添加样式列表标记。</p>
+<p>block 象块类型元素一样显示。<br>none 缺省值。<br>inline 象行内元素类型一样显示。<br>inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。<br>list-item 象块类型元素一样显示，并添加样式列表标记。</p>
 </blockquote>
 </li>
 </ul>
@@ -1014,16 +1014,16 @@
   </entry>
   
   <entry>
-    <title><![CDATA[面试哪些事－HTML篇]]></title>
+    <title><![CDATA[面试那些事－HTML篇]]></title>
     <link href="hynal.com/2016/01/28/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/"/>
     <id>hynal.com/2016/01/28/面试那些事－HTML篇/</id>
     <published>2016-01-28T07:27:46.000Z</published>
-    <updated>2016-02-22T02:39:44.000Z</updated>
+    <updated>2016-02-22T02:47:17.000Z</updated>
     <content type="html"><![CDATA[<h2 id="u672C_u6587_u7684_u662F_u524D_u7AEF_u9762_u8BD5_u9898_u7684_u4E00_u4E2A_u62C6_u5206_uFF0C_u4E4B_u6240_u4EE5_u8981_u628A_u5B83_u62C6_u51FA_u6765_u56E0_u4E3A_uFF1A"><a href="#u672C_u6587_u7684_u662F_u524D_u7AEF_u9762_u8BD5_u9898_u7684_u4E00_u4E2A_u62C6_u5206_uFF0C_u4E4B_u6240_u4EE5_u8981_u628A_u5B83_u62C6_u51FA_u6765_u56E0_u4E3A_uFF1A" class="headerlink" title="本文的是前端面试题的一个拆分，之所以要把它拆出来因为："></a>本文的是<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个拆分，之所以要把它拆出来因为：</h2><p>一个是都放在一篇里面实在太长了（PS：看着心好累有木有？总想着什么时候才能看完有木有？看着看着就不想看了有木有？）；<br>另一个是方便日后自己针对性的进行管理（删除？修改？添加？）。。</p>
 <p>姐妹篇：</p>
 <ul>
-<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E5%93%AA%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/">面试那些事－CSS篇</a></li>
-<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8Djavascript%E7%AF%87/">面试那些事－javascript篇</a></li>
+<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/">面试那些事－CSS篇</a></li>
+<li><a href="/blog/(http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8Djavascript%E7%AF%87/">面试那些事－javascript篇</a></li>
 </ul>
 <p><strong> 下面开始正文： </strong></p>
 <ul>
