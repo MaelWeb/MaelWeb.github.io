@@ -265,10 +265,6 @@ CSS选">
   	<time datetime="2016-02-15T06:37:34.000Z" itemprop="datePublished">2016-02-15</time>
 </a>
       
-    <div id="/blog/2016/02/15/面试那些事－CSS篇/" class="leancloud_visitors iconfont icon-view" data-flag-title="面试那些事－CSS篇">
-        <span class="leancloud-visitors-count">0</span>
-    </div>
-
     </div>
   
   <div class="article-inner">
@@ -837,10 +833,13 @@ CSS选">
 
     $(function() {
       var Counter = AV.Object.extend("Counter");
+      console.log($('.leancloud_visitors').length);
       if ($('.leancloud_visitors').length == 1) {
         addCount(Counter);
+        console.log(1);
       } else if ($('.archive-article-title, .article-title').length > 1) {
         showTime(Counter);
+        console.log(2);
       }
     });
   </script>

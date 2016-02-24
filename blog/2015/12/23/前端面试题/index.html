@@ -233,10 +233,6 @@
   	<time datetime="2015-12-23T15:49:44.000Z" itemprop="datePublished">2015-12-23</time>
 </a>
       
-    <div id="/blog/2015/12/23/前端面试题/" class="leancloud_visitors iconfont icon-view" data-flag-title="前端面试题">
-        <span class="leancloud-visitors-count">0</span>
-    </div>
-
     </div>
   
   <div class="article-inner">
@@ -1818,10 +1814,13 @@ JS 分文件夹存放 命名以该JS功能为准的英文翻译。
 
     $(function() {
       var Counter = AV.Object.extend("Counter");
+      console.log($('.leancloud_visitors').length);
       if ($('.leancloud_visitors').length == 1) {
         addCount(Counter);
+        console.log(1);
       } else if ($('.archive-article-title, .article-title').length > 1) {
         showTime(Counter);
+        console.log(2);
       }
     });
   </script>
