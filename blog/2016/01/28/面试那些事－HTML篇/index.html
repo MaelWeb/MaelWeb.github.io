@@ -508,6 +508,12 @@ Doctype作用？标准模式与兼容模式各有什么区别?
     
 <nav id="article-nav">
   
+    <a href="/blog/2016/01/24/一份很受欢迎的前端代码指南/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">一份很受欢迎的前端代码指南</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+  
     <a href="/blog/2016/02/15/面试那些事－CSS篇/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
@@ -517,35 +523,10 @@ Doctype作用？标准模式与兼容模式各有什么区别?
       </div>
     </a>
   
-  
-    <a href="/blog/2016/01/24/一份很受欢迎的前端代码指南/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">一份很受欢迎的前端代码指南</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
 </nav>
 
   
 </article>
-
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
 
 
 
@@ -673,7 +654,6 @@ Doctype作用？标准模式与兼容模式各有什么区别?
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
-            console.log(newcounter.get('time'));
             newcounter.save(null, {
               success: function(newcounter) {
                 var $element = $(document.getElementById(url));
@@ -693,13 +673,10 @@ Doctype作用？标准模式与兼容模式各有什么区别?
 
     $(function() {
       var Counter = AV.Object.extend("Counter");
-      console.log($('.leancloud_visitors').length);
       if ($('.leancloud_visitors').length == 1) {
         addCount(Counter);
-        console.log(1);
       } else if ($('.archive-article-title, .article-title').length > 1) {
         showTime(Counter);
-        console.log(2);
       }
     });
   </script>
