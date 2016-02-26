@@ -1,0 +1,225 @@
+html,
+body,
+ul,
+div,
+h3,
+blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background: #fffff9;
+    font: 12px/1.5 "Helvetica Neue", Helvetica, "Lucida Grande", "Luxi Sans", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei Mono", LiGothicMed;
+    color: #444;
+}
+.hide {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    z-index: 111;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    border-top: 4px solid #825d5b;
+}
+
+.nav {
+    padding: 9px 0 10px;
+    background: #f6f6f1;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 2px 7px;
+    color: #825d5b;
+}
+
+.nav .index {
+    color: #f70;
+    padding-right: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.main {
+    padding-top: 50px;
+}
+.novel {
+    padding-top: 70px;
+}
+.nav>ul,
+.main, .web {
+    width: 1068px;
+    margin: 0 auto;
+}
+
+section h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #444;
+}
+
+section header {
+    padding: 0 10px;
+    margin: 20px 0;
+    margin-bottom: 20px;
+    border-left: 10px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.booklist ul {
+    font-size: 0;
+}
+.booklist .item,
+.booklist .cover-side,
+.booklist .info-side {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.booklist .cover-side,
+.booklist .info-side {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: inherit;
+}
+
+.booklist .inner {
+    width: 340px;
+    height: 260px;
+    margin: 0 16px 16px 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.booklist .inner::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    bottom: -100%;
+    right: -100%;
+    border: 1px solid #b4cdd2;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.booklist .cover-side::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-right: 1px solid #b4cdd2;
+    -webkit-transform: scaleX(.5);
+    -moz-transform: scaleX(.5);
+    -ms-transform: scaleX(.5);
+    transform: scaleX(.5);
+    -webkit-transform-origin: right 0;
+    -moz-transform-origin: right 0;
+    -ms-transform-origin: right 0;
+    transform-origin: right 0;
+}
+
+.booklist .cover-side {
+    width: 168px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.booklist .info-side {
+    width: 172px;
+    padding: 15px 12px;
+}
+
+.booklist .info-side .name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.booklist .title {
+    display: block;
+    color: #3f8d94;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    _width: 100%;
+}
+
+.booklist blockquote {
+    width: 140px;
+    margin-top: 10px;
+    padding: 0 6px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}

@@ -39,7 +39,7 @@ body {
     background: rgb(244, 244, 244);
     color: #000;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -265,11 +265,11 @@ body #cdawrap:hover #cda-remove {
 }
 
 .wrap {
-    width: 200px;
+    width: 220px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -190px 0 0 -100px;
+    margin: -190px 0 0 -110px;
     text-align: center;
 }
 
@@ -282,11 +282,22 @@ a:hover {
     color: #000;
 }
 
-a:after {
-    margin-right: 2px;
-    margin-left: 2px;
-    content: '/';
+.btn {
+    color: #666;
+    margin-right: 10px;
+    // text-decoration: underline;
+    border: 1px solid #666;
+    padding: 2px 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    // display: inline-block;
+}
+.btn:hover {
     color: #000;
+    border-color: #000;
+}
+.btn:last-child {
+    margin-right: 0;
 }
 
 @-webkit-keyframes zoomIn {
@@ -331,5 +342,20 @@ a:after {
     }
     .mac-bottom {
         width: 1520px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .layout {
+        padding: 0;
+    }
+    .mac {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+    .mac-bottom {
+        display: none;
     }
 }

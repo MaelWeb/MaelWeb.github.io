@@ -32,11 +32,12 @@ var Main = React.createClass({
 				</header>
 				<div className="ip-main">
 					<div className="wrap">
-			            <img src="about/images/me.png" alt="my" className="animated zoomIn" />
-			            <h1>MaelWeb</h1>
-			            <h3>Web Engineer</h3>
-			            <a href="/blog">BLOG</a>
-			            <a href="/about"> RESUME</a>
+			            <img src="about/images/me.png" alt="my" className="animated zoomIn" height="150px"/>
+			            <h1>零下柒度</h1>
+			            <p>前端攻城狮，伪文艺青年</p>
+			            <a href="/blog" className="btn">博客</a>
+			            <a href="/about" className="btn">简历</a>
+			            <a href="/book" className="btn">书单</a>
         			</div>
 				</div>
 			</div>
