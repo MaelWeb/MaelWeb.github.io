@@ -60,11 +60,11 @@ var util = {
 };
 window._reading = {
     data: [{
-        title: "单恋",
-        author: "东野圭吾",
-        img: "http://7xqfgq.com1.z0.glb.clouddn.com/%E5%8D%95%E6%81%8B.jpg",
-        excerpt: "一个深藏内心的秘密究竟有多大杀伤力？哲朗与美月久别重逢，十年前的一夜缱绻如在昨日...",
-        link: "https://read.douban.com/reader/ebook/9440506/"
+        title: "阿弥陀佛么么哒",
+        author: "大冰 ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s28259771.jpg",
+        excerpt: "请相信，这个世界上真的有人在过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。",
+        link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=CE14FFA5FDFFC204A3F9952F9D17D7F0?id=1900492476"
     }, {
         title: "AngularJS深度剖析与最佳实践",
         author: "雪狼 破狼 彭洪伟",
@@ -84,17 +84,29 @@ window._toread = {
 };
 window._year = {
     data: [{
+        title: "阿弥陀佛么么哒",
+        author: "大冰 ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s28259771.jpg",
+        excerpt: "请相信，这个世界上真的有人在过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。",
+        link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=CE14FFA5FDFFC204A3F9952F9D17D7F0?id=1900492476"
+    },{
         title: "单恋",
         author: "东野圭吾",
         img: "http://7xqfgq.com1.z0.glb.clouddn.com/%E5%8D%95%E6%81%8B.jpg",
         excerpt: "一个深藏内心的秘密究竟有多大杀伤力？哲朗与美月久别重逢，十年前的一夜缱绻如在昨日...",
         link: "https://read.douban.com/ebook/9440506/"
+    },{
+        title: "AngularJS深度剖析与最佳实践",
+        author: "雪狼 破狼 彭洪伟",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/angularjs.jpg",
+        excerpt: "深入讲解AngularJS的基本概念及其背后的原理，包括完整的开发框架与实践。不仅抽丝剥茧地展现了AngularJS的诸多特性与技巧，还讲解了工程实践中容易陷入的“坑”，是从小工走向专家的必备参考。",
+        link: "https://read.douban.com/reader/ebook/17826372/"
     }],
 };
 window._js = {
     data: [{
         title: "JavaScript权威指南（第6版）",
-        author: "〔美〕弗兰纳根（Flanagan，D.）",
+        author: "Flanagan，D.",
         img: "http://7xqfgq.com1.z0.glb.clouddn.com/15113928.jpg",
         excerpt: "本书是程序员学习核心JavaScript语言和由Web浏览器定义的JavaScript API的指南和综合参考手册。第6版涵盖HTML 5和ECMAScript 5。新增章节描述了jQuery和服务器端JavaScript。",
         link: "https://read.douban.com/reader/ebook/15113928/"
@@ -104,6 +116,12 @@ window._js = {
         img: "http://7xqfgq.com1.z0.glb.clouddn.com/angularjs.jpg",
         excerpt: "深入讲解AngularJS的基本概念及其背后的原理，包括完整的开发框架与实践。不仅抽丝剥茧地展现了AngularJS的诸多特性与技巧，还讲解了工程实践中容易陷入的“坑”，是从小工走向专家的必备参考。",
         link: "https://read.douban.com/reader/ebook/17826372/"
+    },{
+        title: "JavaScript高级程序设计（第3版）",
+        author: "Nicholas C.Zakas ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/41ae83c0-f276-451a-8fca-3f769820f3d1.jpg",
+        excerpt: "JavaScript技术经典名著，在详细讲解了JavaScript语言的核心，条分缕析地为读者展示了现有规范及实现为开发Web应用提供的各种支持和特性。",
+        link: "http://cread.e.jd.com/read/startRead.action?bookId=30137817&readType=1"
     }],
 };
 window._html_css = {
@@ -122,6 +140,18 @@ window._novel = {
         img: "http://7xqfgq.com1.z0.glb.clouddn.com/%E5%8D%95%E6%81%8B.jpg",
         excerpt: "一个深藏内心的秘密究竟有多大杀伤力？哲朗与美月久别重逢，十年前的一夜缱绻如在昨日...",
         link: "https://read.douban.com/ebook/9440506/"
+    },{
+        title: "乖，摸摸头",
+        author: "大冰",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/7737069.jpg",
+        excerpt: "12个故事，12种善意，如点点星光与烛火，给所有心怀希望的人们以温暖和光芒。请相信，这个世界上真的有人在过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。...",
+        link: "https://read.douban.com/reader/ebook/7737069/"
+    },{
+        title: "阿弥陀佛么么哒",
+        author: "大冰 ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s28259771.jpg",
+        excerpt: "请相信，这个世界上真的有人在过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。",
+        link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=CE14FFA5FDFFC204A3F9952F9D17D7F0?id=1900492476"
     }],
 };
 var readingUl = document.getElementById("reading"),

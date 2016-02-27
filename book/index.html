@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="stylesheet" type="text/css" href="./book.css" />
+    <link rel="stylesheet" type="text/css" href="./pack/book.min.css" />
     <title>书单－Under 7℃</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="96x96" href="/about/images/my_logo2px.png">
     <link rel="apple-touch-icon-precomposed" sizes="96x96" href="/about/images/my_logo2px.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/about/images/my_logo4x.png">
@@ -26,12 +26,13 @@
 
 <body>
     <header class="top">
-        <nav class="nav">
+        <nav class="nav clearfix">
             <ul>
                 <li class="index"><a href="javascript:void(0);" name="nav" data-id="read">Under 7℃</a></li>
                 <li><a href="javascript:void(0);" name="nav" data-id="web">前端</a></li>
                 <li><a href="javascript:void(0);" name="nav" data-id="novel">小说</a></li>
             </ul>
+            <a href="/about" class="r">关于我</a><a href="/blog" class="r">博客</a>
         </nav>
     </header>
     <div class="main animated" id="read" name="main">
@@ -128,7 +129,7 @@
         </li>
     <% } %>
 </script>
-<script src="./book.js"></script>
+<script src="./pack/book.min.js"></script>
 </body>
 
 </html>

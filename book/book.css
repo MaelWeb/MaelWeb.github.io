@@ -25,7 +25,23 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+.r {
+    float: right;
+}
+.l {
+    float: left;
+}
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 ul {
     list-style: none;
 }
@@ -37,13 +53,16 @@ ul {
     width: 100%;
     border-bottom: 1px solid #eee;
     border-top: 4px solid #825d5b;
+    background: #f6f6f1;
 }
 
 .nav {
     padding: 9px 0 10px;
-    background: #f6f6f1;
 }
-
+.nav ul {
+    width: 80%;
+    display: inline-block;
+}
 .nav li {
     display: inline-block;
     padding: 2px 7px;
@@ -56,14 +75,17 @@ ul {
     font-weight: bolder;
     font-size: 20px;
 }
-
+.nav .r {
+    color: #75a4b4;
+    padding: 10px 10px 0 0;
+}
 .main {
     padding-top: 50px;
 }
 .novel {
     padding-top: 70px;
 }
-.nav>ul,
+.nav,
 .main, .web {
     width: 1068px;
     margin: 0 auto;
