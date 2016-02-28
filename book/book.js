@@ -154,12 +154,34 @@ window._novel = {
         link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=CE14FFA5FDFFC204A3F9952F9D17D7F0?id=1900492476"
     }],
 };
+window._other = {
+    data: [{
+        title: "从0到1",
+        author: "蒂尔 马斯特斯",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/8937101.jpg",
+        excerpt: "在传统时代，成功企业的商业模式是一个从1到N的过程，也就是在现有基础上，复制之前的经验，通过竞争不断扩大自己的市场影响力。而在互联网时代，成功的企业却是一个从无到有，即从0到1创造市场的过程。",
+        link: "https://read.douban.com/reader/ebook/8937101/"
+    },{
+        title: "风光摄影的N个关键",
+        author: "王猛",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s22791066.jpg",
+        excerpt: "将风光摄影的成功要诀总结为22个简单易记的关键词，从器材准备出发，再帮助影友在21种风光题材拍摄实战中活学活用这些关键词，最后的部分总结出9个拍摄效果的优化秘技，巩固并提升风光片的拍摄水准。",
+        link: "http://www.amazon.cn/%E9%A3%8E%E5%85%89%E6%91%84%E5%BD%B1%E7%9A%84N%E4%B8%AA%E5%85%B3%E9%94%AE-%E7%8E%8B%E7%8C%9B/dp/B008X0QMUG"
+    },{
+        title: "国富论",
+        author: "亚当·斯密",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s2164670.jpg",
+        excerpt: "可以说《国富论》是现代政治经济学研究的起点。",
+        link: "http://yuedu.baidu.com/ebook/7385b5ff89eb172ded63b7ed?fr=aladdin&key=%E5%9B%BD%E5%AF%8C%E8%AE%BA&f=read"
+    }],
+};
 var readingUl = document.getElementById("reading"),
     toReadUl = document.getElementById("toread"),
     yearUl = document.getElementById("yaer"),
     jsUl = document.getElementById("js"),
     htmlUl = document.getElementById("html"),
     novelUl = document.getElementById("novellist"),
+    otherUl = document.getElementById("otherlist"),
     tplStr = document.getElementById("tpl").innerHTML;
 
 readingUl.innerHTML = tpl(tplStr, _reading);
@@ -170,6 +192,7 @@ jsUl.innerHTML = tpl(tplStr, _js);
 htmlUl.innerHTML = tpl(tplStr, _html_css);
 
 novelUl.innerHTML = tpl(tplStr, _novel);
+otherUl.innerHTML = tpl(tplStr, _other);
 
 for (var i = 0; i < document.getElementsByName("nav").length; i++) {
     util.addEvent(document.getElementsByName("nav")[i], "click", function() {
