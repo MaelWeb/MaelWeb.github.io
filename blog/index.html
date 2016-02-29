@@ -357,43 +357,39 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        本文前端面试题的一个分支。姐妹篇：
+        <p>本文<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个分支。<br>姐妹篇：</p>
+<ul>
+<li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试那些事－HTML篇</a></li>
+<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/">面试那些事－CSS篇</a></li>
+</ul>
+<p><br><br><strong> 下面开始正文： </strong></p>
+<ul>
+<li>介绍js的基本数据类型。</li>
+</ul>
+<blockquote>
+<p>number,string,boolean,undefined</p>
+</blockquote>
+<ul>
+<li>说几条写JavaScript的基本规范？</li>
+</ul>
+<blockquote>
+<ol>
+<li>不要在同一行声明多个变量。</li>
+<li>请使用 ===/!==来比较true/false或者数值</li>
+<li>使用对象字面量替代new Array这种形式</li>
+<li>不要使用全局函数。</li>
+<li>Switch语句必须带有default分支</li>
+<li>函数不应该有时候有返回值，有时候没有返回值。</li>
+<li>For循环必须使用大括号</li>
+<li>If语句必须使用大括号</li>
+<li>for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。</li>
+</ol>
+</blockquote>
+<ul>
+<li>JavaScript原型，原型链 ? 有什么特点？</li>
+</ul>
+<blockquote>
 
-面试那些事－HTML篇
-面试那些事－CSS篇
-
- 下面开始正文： 
-
-介绍js的基本数据类型。
-
-
-number,string,boolean,undefined
-
-
-说几条写JavaScript的基本规范？
-
-
-
-不要在同一行声明多个变量。
-请使用 ===/!==来比较true/false或者数值
-使用对象字面量替代new Array这种形式
-不要使用全局函数。
-Switch语句必须带有default分支
-函数不应该有时候有返回值，有时候没有返回值。
-For循环必须使用大括号
-If语句必须使用大括号
-for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。
-
-
-
-JavaScript原型，原型链 ? 有什么特点？
-
-
-原型对象也是普通的对象，是对象一个自带隐式的 proto 属性，原型也有可能有自己的原型，如果一个原型对象的原型不为null的话，我们就称之为原型链。原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。
-
--JavaScript的数据对象有那些属性值？
-
-writable：这个属性的值是否可以改。
       
     </div>
     
@@ -469,45 +465,24 @@ writable：这个属性的值是否可以改。
     
     <div class="article-entry" itemprop="articleBody">
       
-        本文前端面试题的一个分支。姐妹篇：
+        <p>本文<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个分支。<br>姐妹篇：</p>
+<ul>
+<li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试那些事－HTML篇</a></li>
+<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8Djavascript%E7%AF%87/">面试那些事－javascript篇</a></li>
+</ul>
+<p><br><br><strong> 下面开始正文： </strong></p>
+<ul>
+<li><p>介绍一下CSS的盒子模型？</p>
+<blockquote>
+<p>（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;<br>（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>CSS选择符有哪些？哪些属性可以继承？</li>
+</ul>
+<blockquote>
 
-面试那些事－HTML篇
-面试那些事－javascript篇
-
- 下面开始正文： 
-
-介绍一下CSS的盒子模型？
-
-（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
-
-
-
-
-CSS选择符有哪些？哪些属性可以继承？
-
-
-
-选择符
-
-id选择器（ # myid）
-类选择器（.myclassname）
-标签选择器（div, h1, p）
-相邻选择器（h1 + p）
-子选择器（ul &gt; li）
-后代选择器（li a）
-通配符选择器（ * ）
-属性选择器（a[rel = “external”]）
-伪类选择器（a: hover, li: nth - child）
-
-
-可继承的样式： font-size font-family color, UL LI DL DD DT;
-
-不可继承的样式：border padding margin width height ;
-
-
-
-
-CSS优
       
     </div>
     
@@ -590,26 +565,14 @@ CSS优
     
     <div class="article-entry" itemprop="articleBody">
       
-        本文的是前端面试题的一个拆分，之所以要把它拆出来因为：一个是都放在一篇里面实在太长了（PS：看着心好累有木有？总想着什么时候才能看完有木有？看着看着就不想看了有木有？）；另一个是方便日后自己针对性的进行管理（删除？修改？添加？）。。
-姐妹篇：
+        <h2 id="u672C_u6587_u7684_u662F_u524D_u7AEF_u9762_u8BD5_u9898_u7684_u4E00_u4E2A_u62C6_u5206_uFF0C_u4E4B_u6240_u4EE5_u8981_u628A_u5B83_u62C6_u51FA_u6765_u56E0_u4E3A_uFF1A"><a href="#u672C_u6587_u7684_u662F_u524D_u7AEF_u9762_u8BD5_u9898_u7684_u4E00_u4E2A_u62C6_u5206_uFF0C_u4E4B_u6240_u4EE5_u8981_u628A_u5B83_u62C6_u51FA_u6765_u56E0_u4E3A_uFF1A" class="headerlink" title="本文的是前端面试题的一个拆分，之所以要把它拆出来因为："></a>本文的是<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个拆分，之所以要把它拆出来因为：</h2><p>一个是都放在一篇里面实在太长了（PS：看着心好累有木有？总想着什么时候才能看完有木有？看着看着就不想看了有木有？）；<br>另一个是方便日后自己针对性的进行管理（删除？修改？添加？）。。</p>
+<p>姐妹篇：</p>
+<ul>
+<li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/">面试那些事－CSS篇</a></li>
+<li><a href="/blog/(http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8Djavascript%E7%AF%87/">面试那些事－javascript篇</a></li>
+</ul>
+<p><strong> 下面开始正文： </strong></p>
 
-面试那些事－CSS篇
-面试那些事－javascript篇
-
- 下面开始正文： 
-
-Doctype作用？标准模式与兼容模式各有什么区别?
-
-（1）、&lt;!DOCTYPE&gt;声明位于位于HTML文档中的第一行，处于  标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。
-（2）、标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。
-
-
-
-
-HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？
-
-HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；
-而HTML4.01基于SGML,所
       
     </div>
     
@@ -692,10 +655,10 @@ HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype�
     
     <div class="article-entry" itemprop="articleBody">
       
-        原文地址：Frontend Guidelines
-中文翻译版原文: SegmentFaul
-HTML语义化标签HTML5 提供了很多语义化元素，更好地帮助描述内容。希望你能从这些丰富的标签库中受益。
-123456789101112131415161718192021&lt;!-- bad --&gt;&lt;div id="main"&gt;  &lt;div class="article"&gt;    &lt;div class="header"&gt;      &lt;h1&gt;Blog post&lt;/h1&gt;      &lt;p&gt;Published: &lt;span&gt;21st Feb, 2015&lt;/span&gt;&lt;/p&gt;    &lt;/div&gt;    &lt;p&gt;…&lt;/p&gt;  &lt;/div&gt;&lt;/div&gt;&lt;!-- good --&gt;&lt;main&gt;  &lt;article&gt;    &lt;header&gt;      &lt;h1&gt;Blog post&
+        <p>原文地址：<a href="https://github.com/bendc/frontend-guidelines/blob/master/README.md" target="_blank" rel="external">Frontend Guidelines</a></p>
+<p>中文翻译版原文: <a href="thttp://segmentfault.com/a/1190000002587334?utm_source=weekly&amp;utm_medium=email&amp;utm_campaign=email_weekly" target="_blank" rel="external">SegmentFaul</a></p>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="u8BED_u4E49_u5316_u6807_u7B7E"><a href="#u8BED_u4E49_u5316_u6807_u7B7E" class="headerlink" title="语义化标签"></a>语义化标签</h3><p>HTML5 提供了很多语义化元素，更好地帮助描述内容。希望你能从这些丰富的标签库中受益。</p>
+
       
     </div>
     
