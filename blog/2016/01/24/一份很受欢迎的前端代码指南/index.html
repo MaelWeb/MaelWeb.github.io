@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>一份很受欢迎的前端代码指南 | Under 7℃</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="description" content="原文地址：Frontend Guidelines
+中文翻译版原文: SegmentFaul
+HTML语义化标签HTML5 提供了很多语义化元素，更好地帮助描述内容。希望你能从这些丰富的标签库中受益。
+123456789101112131415161718192021&amp;lt;!-- bad --&amp;gt;&amp;lt;div id=&quot;main&quot;&amp;gt;  &amp;lt;div class=&quot;article&quot;&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一份很受欢迎的前端代码指南">
+<meta property="og:url" content="hynal.com/2016/01/24/一份很受欢迎的前端代码指南/index.html">
+<meta property="og:site_name" content="Under 7℃">
+<meta property="og:description" content="原文地址：Frontend Guidelines
+中文翻译版原文: SegmentFaul
+HTML语义化标签HTML5 提供了很多语义化元素，更好地帮助描述内容。希望你能从这些丰富的标签库中受益。
+123456789101112131415161718192021&amp;lt;!-- bad --&amp;gt;&amp;lt;div id=&quot;main&quot;&amp;gt;  &amp;lt;div class=&quot;article&quot;&amp;gt">
+<meta property="og:image" content="http://7xqfgq.com1.z0.glb.clouddn.com/codingstyle.jpg">
+<meta property="og:image" content="http://7xqfgq.com1.z0.glb.clouddn.com/393fd26e4d625cadfa5676944b920920.jpg">
+<meta property="og:updated_time" content="2016-03-01T09:14:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一份很受欢迎的前端代码指南">
+<meta name="twitter:description" content="原文地址：Frontend Guidelines
+中文翻译版原文: SegmentFaul
+HTML语义化标签HTML5 提供了很多语义化元素，更好地帮助描述内容。希望你能从这些丰富的标签库中受益。
+123456789101112131415161718192021&amp;lt;!-- bad --&amp;gt;&amp;lt;div id=&quot;main&quot;&amp;gt;  &amp;lt;div class=&quot;article&quot;&amp;gt">
+  
+    <link rel="alternative" href="/atom.xml" title="Under 7℃" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/blog/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xqfgq.com1.z0.glb.clouddn.com/logo.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Under 7℃</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">游走在技术与艺术的边缘</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/blog">主页</a></li>
+				        
+							<li><a href="/blog/archives">所有文章</a></li>
+				        
+							<li><a href="/about">关于我</a></li>
+				        
+							<li><a href="/book">书单</a></li>
+				        
+				        	<li>
+<div id="search-form-wrap">
+    <div class="search-form">
+        <input type="text" class="st-default-search-input search-form-input" placeholder="搜索" />
+    </div>
+    <script type="text/javascript">
+    (function(w,d,t,u,n,s,e) {w['SwiftypeObject']=n;w[n]=w[n]||function() {
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+    _st('install','E1j2z_RzVHxcDyZDeS_B','2.0.0');
+    </script>
+    <style>
+        .st-ui-injected-overlay-container,
+        .st-ui-injected-overlay-container *:not(select) {
+            font-family: inherit !important;
+        }
+        section.st-ui-content.st-search-results a.st-ui-result .st-ui-type-heading {
+            color: #000 !important;
+        }
+        .st-ui-injected-overlay-container .st-ui-header input[type="text"]:focus {
+            border-bottom: 2px solid #000;
+        }
+        .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link {
+            color: #000;
+        }
+        .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link span.st-ui-arrow {
+            border-color: #000;
+        }
+    </style>
+</div>
+</li>
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								
+								<a class="github" target="_blank" href="https://github.com/MaelWeb" title="github">github</a>
+								
+					        
+								
+								<a class="mail"  href="mailto:mael.liang@live.com" title="mail">mail</a>
+								
+					        
+						</div>
+					</nav>
+				</section>
+
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/blog/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/blog/tags/angular/" style="font-size: 10px;">angular</a> <a href="/blog/tags/ios/" style="font-size: 10px;">ios</a> <a href="/blog/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/blog/tags/代码风格/" style="font-size: 10px;">代码风格</a> <a href="/blog/tags/优化/" style="font-size: 10px;">优化</a> <a href="/blog/tags/前端/" style="font-size: 15px;">前端</a> <a href="/blog/tags/移动web/" style="font-size: 10px;">移动web</a> <a href="/blog/tags/资源/" style="font-size: 10px;">资源</a> <a href="/blog/tags/面试/" style="font-size: 20px;">面试</a>
+					</div>
+				</section>
+				
+
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://gsisland.com/">G&#39;s island</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.doubis.com/">Kris Lee</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Under 7℃</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://7xqfgq.com1.z0.glb.clouddn.com/logo.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Under 7℃</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">游走在技术与艺术的边缘</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/blog">主页</a></li>
+		        
+					<li><a href="/blog/archives">所有文章</a></li>
+		        
+					<li><a href="/about">关于我</a></li>
+		        
+					<li><a href="/book">书单</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/MaelWeb" title="github">github</a>
+			        
+						<a class="mail" target="_blank" href="/blog/mael.liang@live.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">  <article id="post-一份很受欢迎的前端代码指南" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/blog/2016/01/24/一份很受欢迎的前端代码指南/" class="article-date">
+  	<time datetime="2016-01-24T13:30:34.000Z" itemprop="datePublished">2016-01-24</time>
+</a>
+      
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      一份很受欢迎的前端代码指南
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/代码风格/">代码风格</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/优化/">优化</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/blog/categories/前端/">前端</a>
+	</div>
+
+
+        
+    <div id="/blog/2016/01/24/一份很受欢迎的前端代码指南/" class="leancloud_visitors iconfont icon-view" data-flag-title="一份很受欢迎的前端代码指南">
+        <span class="leancloud-visitors-count">0</span>
+    </div>
+
+        
+    <div class="comments iconfont icon-comments">
+        <a href="/blog/2016/01/24/一份很受欢迎的前端代码指南/#comments"><span class="ds-thread-count" data-thread-key="2016/01/24/一份很受欢迎的前端代码指南/" data-count-type="comments"></span></a>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    
+    
+      <a href="/blog/2016/01/24/一份很受欢迎的前端代码指南/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://7xqfgq.com1.z0.glb.clouddn.com/codingstyle.jpg)" alt="一份很受欢迎的前端代码指南" class="thumbnail-image"></span>
+    
+</a>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>原文地址：<a href="https://github.com/bendc/frontend-guidelines/blob/master/README.md" target="_blank" rel="external">Frontend Guidelines</a></p>
+<p>中文翻译版原文: <a href="http://segmentfault.com/a/1190000002587334?utm_source=weekly&amp;utm_medium=email&amp;utm_campaign=email_weekly" target="_blank" rel="external">SegmentFaul</a></p>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="u8BED_u4E49_u5316_u6807_u7B7E"><a href="#u8BED_u4E49_u5316_u6807_u7B7E" class="headerlink" title="语义化标签"></a>语义化标签</h3><p>HTML5 提供了很多语义化元素，更好地帮助描述内容。希望你能从这些丰富的标签库中受益。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- bad --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"article"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"header"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Blog post<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">p</span>&gt;</span>Published: <span class="tag">&lt;<span class="title">span</span>&gt;</span>21st Feb, 2015<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">p</span>&gt;</span>…<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- good --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">main</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">article</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">header</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Blog post<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">p</span>&gt;</span>Published: <span class="tag">&lt;<span class="title">time</span> <span class="attribute">datetime</span>=<span class="value">"2015-02-21"</span>&gt;</span>21st Feb, 2015<span class="tag">&lt;/<span class="title">time</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">p</span>&gt;</span>…<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">article</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">main</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>请确保正确使用语义化的标签，错误的用法甚至不如保守的用法。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- bad --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">figure</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">alt</span>=<span class="value">Company</span> <span class="attribute">src</span>=<span class="value">logo.png</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">figure</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- good --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">img</span> <span class="attribute">alt</span>=<span class="value">Company</span> <span class="attribute">src</span>=<span class="value">logo.png</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u7B80_u6D01"><a href="#u7B80_u6D01" class="headerlink" title="简洁"></a>简洁</h3><p>确保代码简洁性，不要再采用XHTML的旧做法。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- bad --&gt;</span></span><br><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">en</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">Content-Type</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>Contact<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">stylesheet</span> <span class="attribute">href</span>=<span class="value">style.css</span> <span class="attribute">type</span>=<span class="value">text</span>/<span class="attribute">css</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Contact me<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">label</span>&gt;</span></span><br><span class="line">      Email address:</span><br><span class="line">      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">email</span> <span class="attribute">placeholder</span>=<span class="value">you@email.com</span> <span class="attribute">required</span>=<span class="value">required</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">main.js</span> <span class="attribute">type</span>=<span class="value">text</span>/<span class="attribute">javascript</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- good --&gt;</span></span><br><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">en</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">utf-8</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Contact<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">stylesheet</span> <span class="attribute">href</span>=<span class="value">style.css</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Contact me<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">label</span>&gt;</span></span><br><span class="line">    Email address:</span><br><span class="line">    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">email</span> <span class="attribute">placeholder</span>=<span class="value">you@email.com</span> <span class="attribute">required</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">main.js</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u53EF_u7528_u6027"><a href="#u53EF_u7528_u6027" class="headerlink" title="可用性"></a>可用性</h3><p>可用性不应该是事后才考虑的事情。你不必成为WCAG专家来改进网站，你可以通过简单的修改做出不错的效果，例如；</p>
+<p>正确使用alt属性<br>确保链接和按钮正确使用（不要用<div class="button">这种粗暴的做法）<br>不依赖于颜色来传达信息<br>给表单做好lable标记<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- bad --&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="title">h1</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">alt</span>=<span class="value">"Logo"</span> <span class="attribute">src</span>=<span class="value">"logo.png"</span>&gt;</span><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">&lt;!-- good --&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="title">h1</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">alt</span>=<span class="value">"My Company, Inc."</span> <span class="attribute">src</span>=<span class="value">"logo.png"</span>&gt;</span><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="u8BED_u8A00"><a href="#u8BED_u8A00" class="headerlink" title="语言"></a>语言</h3><p>定义语言和字符编码是可选项，建议在文档级别处定义。使用UTF-8编码。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- bad --&gt;</span></span><br><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>Hello, world.<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- good --&gt;</span></span><br><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">en</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">utf-8</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Hello, world.<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u6027_u80FD"><a href="#u6027_u80FD" class="headerlink" title="性能"></a>性能</h3><p>除非有非要在加载内容前加载脚本的必要性由，不然别这样做，这样会阻碍网页渲染。如果你的样式表很大，必须独立放到一个文件里。两次HTTP 请求不会显著降低性能。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- bad --&gt;</span></span><br><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">utf-8</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">analytics.js</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>Hello, world.<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- good --&gt;</span></span><br><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">utf-8</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>Hello, world.<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">analytics.js</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="u5206_u53F7"><a href="#u5206_u53F7" class="headerlink" title="分号"></a>分号</h3><p>不能漏写分号<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> red</span><br><span class="line"></span></span></span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> red</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u76D2_u6A21_u578B"><a href="#u76D2_u6A21_u578B" class="headerlink" title="盒模型"></a>盒模型</h3><p>整个文档的盒模型应该要相同，最好使用global * { box-sizing: border-box; }定义。不要修改某个元素的盒模型。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u6D41"><a href="#u6D41" class="headerlink" title="流"></a>流</h3><p>尽量不要改变元素默认行为。保持默认的文本流。比如，移出一个图片下面的一个白块，不影响原本的显示：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">img</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">img</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line">类似的，尽量不要改变浮动方式。</span><br><span class="line"></span><br><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> auto</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u5B9A_u4F4D"><a href="#u5B9A_u4F4D" class="headerlink" title="定位"></a>定位</h3><p>有很多CSS定位方法，尽量避免使用以下方法，根据性能排序：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">display</span>: <span class="tag">block</span>;</span><br><span class="line"><span class="tag">display</span>: <span class="tag">flex</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">relative</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">sticky</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">absolute</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">fixed</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="u9009_u62E9_u5668"><a href="#u9009_u62E9_u5668" class="headerlink" title="选择器"></a>选择器</h3><p>紧密耦合DOM选择器，三个层级以上建议加class：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">:first-of-type</span> <span class="pseudo">:last-child</span> &gt; <span class="tag">p</span> ~ *</span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">:first-of-type</span> <span class="class">.info</span></span><br><span class="line">避免不必要的写法：</span><br><span class="line"></span><br><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">img</span><span class="attr_selector">[src$=svg]</span>, <span class="tag">ul</span> &gt; <span class="tag">li</span><span class="pseudo">:first-child</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="attr_selector">[src$=svg]</span>, <span class="tag">ul</span> &gt; <span class="pseudo">:first-child</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u6307_u660E"><a href="#u6307_u660E" class="headerlink" title="指明"></a>指明</h3><p>不要让代码难于重写，让选择器更精确，减少ID、避免使用!important<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="class">.bar</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> green <span class="important">!important</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="class">.foo</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> red</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="class">.foo</span><span class="class">.bar</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> green</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="class">.foo</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> red</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u8986_u76D6"><a href="#u8986_u76D6" class="headerlink" title="覆盖"></a>覆盖</h3><p>覆盖样式会使维护和调试更困难，所以要尽量避免。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">visibility</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">li</span><span class="pseudo">:first-child</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">visibility</span>:<span class="value"> visible</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">li</span> + <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">visibility</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u7EE7_u627F"><a href="#u7EE7_u627F" class="headerlink" title="继承"></a>继承</h3><p>不要把可继承的样式重复声明：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="tag">h1</span>, <span class="tag">div</span> <span class="tag">p</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">text-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">1px</span> <span class="number">0</span> <span class="hexcolor">#fff</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">text-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">1px</span> <span class="number">0</span> <span class="hexcolor">#fff</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u7B80_u6D01-1"><a href="#u7B80_u6D01-1" class="headerlink" title="简洁"></a>简洁</h3><p>保持代码的简洁。使用属性缩写。不必要的值不用写。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> all <span class="number">1s</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> -<span class="number">10px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">padding-top</span>:<span class="value"> <span class="number">5px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">padding-right</span>:<span class="value"> <span class="number">10px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"> <span class="number">20px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">padding-left</span>:<span class="value"> <span class="number">10px</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> <span class="number">1s</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="function">calc</span>(<span class="number">50%</span> - <span class="number">10px</span>)</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">5px</span> <span class="number">10px</span> <span class="number">20px</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u8BED_u8A00-1"><a href="#u8BED_u8A00-1" class="headerlink" title="语言"></a>语言</h3><p>能用英文的时候不用数字。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="pseudo">:nth-child(2n</span> + 1) <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">rotate</span>(<span class="number">360deg</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="pseudo">:nth-child(odd)</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">rotate</span>(<span class="number">1turn</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u4F9B_u5E94_u5546_u7684_u524D_u7F00"><a href="#u4F9B_u5E94_u5546_u7684_u524D_u7F00" class="headerlink" title="供应商的前缀"></a>供应商的前缀</h3><p>砍掉过时的供应商前缀。必须使用时，需要放在标准属性前：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">scale</span>(<span class="number">2</span>)</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">scale</span>(<span class="number">2</span>)</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-moz-transform</span>:<span class="value"> <span class="function">scale</span>(<span class="number">2</span>)</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-ms-transform</span>:<span class="value"> <span class="function">scale</span>(<span class="number">2</span>)</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> <span class="number">1s</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> <span class="number">1s</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-moz-transition</span>:<span class="value"> <span class="number">1s</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-ms-transition</span>:<span class="value"> <span class="number">1s</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">scale</span>(<span class="number">2</span>)</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">scale</span>(<span class="number">2</span>)</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> <span class="number">1s</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u52A8_u753B"><a href="#u52A8_u753B" class="headerlink" title="动画"></a>动画</h3><p>除了变形和改变透明度用animation，其他尽量使用transition。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">:hover</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">animation</span>:<span class="value"> move <span class="number">1s</span> forwards</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">keyframes</span> move </span>&#123;</span><br><span class="line">  100% <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">  &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">:hover</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> <span class="number">1s</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">translateX</span>(<span class="number">100px</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u5355_u4F4D"><a href="#u5355_u4F4D" class="headerlink" title="单位"></a>单位</h3><p>可以不用单位时就不用。建议用rem。时间单位用s比ms好。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> .<span class="number">9em</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">22px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> <span class="number">500ms</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> .<span class="number">9rem</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">1.5</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> .<span class="number">5s</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u989C_u8272"><a href="#u989C_u8272" class="headerlink" title="颜色"></a>颜色</h3><p>需要做透明效果是用rgba，否则都用16进制表示：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">hsl</span>(<span class="number">103</span>, <span class="number">54%</span>, <span class="number">43%</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#5a3</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>绘图</p>
+<p>减少HTTPS请求，尽量用CSS绘图替代图片：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bad */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">::before</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="function">url</span>(white-circle.svg)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* good */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">::before</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="string">""</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">20px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">20px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">border-radius</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u6CE8_u91CA"><a href="#u6CE8_u91CA" class="headerlink" title="注释"></a>注释</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">/* bad */</span><br><span class="line">div &#123;</span><br><span class="line">  // position: relative;</span><br><span class="line">  transform: translateZ(0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* good */</span><br><span class="line">div &#123;</span><br><span class="line">  /* position: relative; */</span><br><span class="line">  will-change: transform;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="u6027_u80FD-1"><a href="#u6027_u80FD-1" class="headerlink" title="性能"></a>性能</h3><p>有可读性、正确性和好的表达比性能更重要。JavaScript基本上不会是你的性能瓶颈。有些可优化细节例如：图片压缩、网络接入、DOM文本流。如果你只能记住本指南的一条规则，那就记住这条吧。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad (albeit way faster)</span></span><br><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="keyword">const</span> len = arr.length;</span><br><span class="line"><span class="keyword">var</span> i = -<span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> result = [];</span><br><span class="line"><span class="keyword">while</span> (++i &lt; len) &#123;</span><br><span class="line">  <span class="keyword">var</span> n = arr[i];</span><br><span class="line">  <span class="keyword">if</span> (n % <span class="number">2</span> &gt; <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">  result.push(n * n);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="keyword">const</span> isEven = n =&gt; n % <span class="number">2</span> == <span class="number">0</span>;</span><br><span class="line"><span class="keyword">const</span> square = n =&gt; n * n;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = arr.filter(isEven).map(square);</span><br></pre></td></tr></table></figure></p>
+<h3 id="Statelessness"><a href="#Statelessness" class="headerlink" title="Statelessness"></a>Statelessness</h3><p>尽量保持代码功能简单化，每个方法都对其他其他代码没有负影响。不使用外部数据。返回一个新对象而不是覆盖原有的对象。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> merge = (target, ...sources) =&gt; <span class="built_in">Object</span>.assign(target, ...sources);</span><br><span class="line">merge(&#123; foo: <span class="string">"foo"</span> &#125;, &#123; bar: <span class="string">"bar"</span> &#125;); <span class="comment">// =&gt; &#123; foo: "foo", bar: "bar" &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> merge = (...sources) =&gt; <span class="built_in">Object</span>.assign(&#123;&#125;, ...sources);</span><br><span class="line">merge(&#123; foo: <span class="string">"foo"</span> &#125;, &#123; bar: <span class="string">"bar"</span> &#125;); <span class="comment">// =&gt; &#123; foo: "foo", bar: "bar" &#125;</span></span><br><span class="line">尽量使用内置方法</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> toArray = obj =&gt; [].slice.call(obj);</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> toArray = (() =&gt;</span><br><span class="line">  <span class="built_in">Array</span>.from ? <span class="built_in">Array</span>.from : obj =&gt; [].slice.call(obj)</span><br><span class="line">)();</span><br></pre></td></tr></table></figure>
+<h3 id="u4E25_u683C_u6761_u4EF6"><a href="#u4E25_u683C_u6761_u4EF6" class="headerlink" title="严格条件"></a>严格条件</h3><p>在非必要严格条件的情况不要使用。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">if</span> (x === <span class="literal">undefined</span> || x === <span class="literal">null</span>) &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">if</span> (x == <span class="literal">undefined</span>) &#123; ... &#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="u5BF9_u8C61"><a href="#u5BF9_u8C61" class="headerlink" title="对象"></a>对象</h3><p>不要在循环里强制改变对象的值，，可以利用array.prototype方法。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">// bad</span><br><span class="line">const sum = arr =&gt; &#123;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  var i = -1;</span><br><span class="line">  for (;arr[++i];) &#123;</span><br><span class="line">    sum += arr[i];</span><br><span class="line">  &#125;</span><br><span class="line">  return sum;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">sum([1, 2, 3]); // =&gt; 6</span><br><span class="line"></span><br><span class="line">// good</span><br><span class="line">const sum = arr =&gt;</span><br><span class="line">  arr.reduce((x, y) =&gt; x + y);</span><br><span class="line"></span><br><span class="line">sum([1, 2, 3]); // =&gt; 6</span><br><span class="line">If you can't, or if using array.prototype methods is arguably abusive, use recursion.</span><br><span class="line"></span><br><span class="line">// bad</span><br><span class="line">const createDivs = howMany =&gt; &#123;</span><br><span class="line">  while (howMany--) &#123;</span><br><span class="line">    document.body.insertAdjacentHTML("beforeend", "&lt;div&gt;&lt;/div&gt;");</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">createDivs(5);</span><br><span class="line"></span><br><span class="line">// bad</span><br><span class="line">const createDivs = howMany =&gt;</span><br><span class="line">  [...Array(howMany)].forEach(() =&gt;</span><br><span class="line">    document.body.insertAdjacentHTML("beforeend", "&lt;div&gt;&lt;/div&gt;")</span><br><span class="line">  );</span><br><span class="line">createDivs(5);</span><br><span class="line"></span><br><span class="line">// good</span><br><span class="line">const createDivs = howMany =&gt; &#123;</span><br><span class="line">  if (!howMany) return;</span><br><span class="line">  document.body.insertAdjacentHTML("beforeend", "&lt;div&gt;&lt;/div&gt;");</span><br><span class="line">  return createDivs(howMany - 1);</span><br><span class="line">&#125;;</span><br><span class="line">createDivs(5);</span><br></pre></td></tr></table></figure></p>
+<h3 id="Arguments"><a href="#Arguments" class="headerlink" title="Arguments"></a>Arguments</h3><p>忘记arguments对象吧，其他参数是更好的选择，因为：</p>
+<p>它已经被定义<br>它是一个真的数组，很方便使用<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> sortNumbers = () =&gt;</span><br><span class="line">  <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>).sort();</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> sortNumbers = (...numbers) =&gt; numbers.sort();</span><br><span class="line">Apply</span><br><span class="line"></span><br><span class="line">忘记apply()，改用运算操作。</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> greet = (first, last) =&gt; <span class="string">`Hi <span class="subst">$&#123;first&#125;</span> <span class="subst">$&#123;last&#125;</span>`</span>;</span><br><span class="line"><span class="keyword">const</span> person = [<span class="string">"John"</span>, <span class="string">"Doe"</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line">greet.apply(<span class="literal">null</span>, person);</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">greet(...person);</span><br></pre></td></tr></table></figure></p>
+<h3 id="Bind"><a href="#Bind" class="headerlink" title="Bind"></a>Bind</h3><p>不用bind()方法，这有更好的选择：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">[<span class="string">"foo"</span>, <span class="string">"bar"</span>].forEach(func.bind(<span class="keyword">this</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">[<span class="string">"foo"</span>, <span class="string">"bar"</span>].forEach(func, <span class="keyword">this</span>);</span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  first: <span class="string">"John"</span>,</span><br><span class="line">  last: <span class="string">"Doe"</span>,</span><br><span class="line">  greet() &#123;</span><br><span class="line">    <span class="keyword">const</span> full = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;this.first&#125;</span> <span class="subst">$&#123;this.last&#125;</span>`</span>;</span><br><span class="line">    &#125;.bind(<span class="keyword">this</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`Hello <span class="subst">$&#123;full()&#125;</span>`</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  first: <span class="string">"John"</span>,</span><br><span class="line">  last: <span class="string">"Doe"</span>,</span><br><span class="line">  greet() &#123;</span><br><span class="line">    <span class="keyword">const</span> full = () =&gt; <span class="string">`<span class="subst">$&#123;this.first&#125;</span> <span class="subst">$&#123;this.last&#125;</span>`</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`Hello <span class="subst">$&#123;full()&#125;</span>`</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="u66F4_u597D_u7684_u6392_u5E8F"><a href="#u66F4_u597D_u7684_u6392_u5E8F" class="headerlink" title="更好的排序"></a>更好的排序</h3><p>避免多重嵌套：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].map(num =&gt; <span class="built_in">String</span>(num));</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].map(<span class="built_in">String</span>);</span><br><span class="line">Composition</span><br><span class="line"></span><br><span class="line">避免方法嵌套调用，改用composition：</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> plus1 = a =&gt; a + <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> mult2 = a =&gt; a * <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line">mult2(plus1(<span class="number">5</span>)); <span class="comment">// =&gt; 12</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> pipeline = (...funcs) =&gt; val =&gt; funcs.reduce((a, b) =&gt; b(a), val);</span><br><span class="line"><span class="keyword">const</span> addThenMult = pipeline(plus1, mult2);</span><br><span class="line">addThenMult(<span class="number">5</span>); <span class="comment">// =&gt; 12</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u7F13_u5B58"><a href="#u7F13_u5B58" class="headerlink" title="缓存"></a>缓存</h3><p>缓存性能测试，大数据结构和任何高代价的操作。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> contains = (arr, value) =&gt;</span><br><span class="line">  <span class="built_in">Array</span>.prototype.includes</span><br><span class="line">    ? arr.includes(value)</span><br><span class="line">    : arr.some(el =&gt; el === value);</span><br><span class="line">contains([<span class="string">"foo"</span>, <span class="string">"bar"</span>], <span class="string">"baz"</span>); <span class="comment">// =&gt; false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> contains = (() =&gt;</span><br><span class="line">  <span class="built_in">Array</span>.prototype.includes</span><br><span class="line">    ? (arr, value) =&gt; arr.includes(value)</span><br><span class="line">    : (arr, value) =&gt; arr.some(el =&gt; el === value)</span><br><span class="line">)();</span><br><span class="line">contains([<span class="string">"foo"</span>, <span class="string">"bar"</span>], <span class="string">"baz"</span>); <span class="comment">// =&gt; false</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u53D8_u91CF"><a href="#u53D8_u91CF" class="headerlink" title="变量"></a>变量</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> 优于 <span class="keyword">let</span>， <span class="keyword">let</span> 优于 <span class="keyword">var</span>。</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">obj[<span class="string">"foo"</span> + <span class="string">"bar"</span>] = <span class="string">"baz"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  [<span class="string">"foo"</span> + <span class="string">"bar"</span>]: <span class="string">"baz"</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="u6761_u4EF6_u5224_u65AD"><a href="#u6761_u4EF6_u5224_u65AD" class="headerlink" title="条件判断"></a>条件判断</h3><p>用多个if，优于 if 、else if、else 和switch。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">var</span> grade;</span><br><span class="line"><span class="keyword">if</span> (result &lt; <span class="number">50</span>)</span><br><span class="line">  grade = <span class="string">"bad"</span>;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (result &lt; <span class="number">90</span>)</span><br><span class="line">  grade = <span class="string">"good"</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  grade = <span class="string">"excellent"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> grade = (() =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (result &lt; <span class="number">50</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"bad"</span>;</span><br><span class="line">  <span class="keyword">if</span> (result &lt; <span class="number">90</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"good"</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">"excellent"</span>;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
+<h3 id="u5BF9_u8C61_u7684_u64CD_u4F5C"><a href="#u5BF9_u8C61_u7684_u64CD_u4F5C" class="headerlink" title="对象的操作"></a>对象的操作</h3><p>避免使用for…in。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> shared = &#123; foo: <span class="string">"foo"</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> obj = <span class="built_in">Object</span>.create(shared, &#123;</span><br><span class="line">  bar: &#123;</span><br><span class="line">    value: <span class="string">"bar"</span>,</span><br><span class="line">    enumerable: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> prop <span class="keyword">in</span> obj) &#123;</span><br><span class="line">  <span class="keyword">if</span> (obj.hasOwnProperty(prop))</span><br><span class="line">    <span class="built_in">console</span>.log(prop);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="built_in">Object</span>.keys(obj).forEach(prop =&gt; <span class="built_in">console</span>.log(prop));</span><br></pre></td></tr></table></figure></p>
+<h3 id="u4F7F_u7528map"><a href="#u4F7F_u7528map" class="headerlink" title="使用map"></a>使用map</h3><p>合理使用的情况下，map更强大：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> me = &#123;</span><br><span class="line">  name: <span class="string">"Ben"</span>,</span><br><span class="line">  age: <span class="number">30</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> meSize = <span class="built_in">Object</span>.keys(me).length;</span><br><span class="line">meSize; <span class="comment">// =&gt; 2</span></span><br><span class="line">me.country = <span class="string">"Belgium"</span>;</span><br><span class="line">meSize++;</span><br><span class="line">meSize; <span class="comment">// =&gt; 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> me = <span class="built_in">Map</span>();</span><br><span class="line">me.set(<span class="string">"name"</span>, <span class="string">"Ben"</span>);</span><br><span class="line">me.set(<span class="string">"age"</span>, <span class="number">30</span>);</span><br><span class="line">me.size; <span class="comment">// =&gt; 2</span></span><br><span class="line">me.set(<span class="string">"country"</span>, <span class="string">"Belgium"</span>);</span><br><span class="line">me.size; <span class="comment">// =&gt; 3</span></span><br></pre></td></tr></table></figure></p>
+<p>Curry</p>
+<p>在别的语言里有Curry的一席之地，但在JS里避免使用。不然会是代码阅读困难。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> sum = a =&gt; b =&gt; a + b;</span><br><span class="line">sum(<span class="number">5</span>)(<span class="number">3</span>); <span class="comment">// =&gt; 8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> sum = (a, b) =&gt; a + b;</span><br><span class="line">sum(<span class="number">5</span>, <span class="number">3</span>); <span class="comment">// =&gt; 8</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u53EF_u8BFB_u6027"><a href="#u53EF_u8BFB_u6027" class="headerlink" title="可读性"></a>可读性</h3><p>不要使用自以为是的技巧：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">foo || doSomething();</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">if</span> (!foo) doSomething();</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">void</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">/* IIFE */</span> &#125;();</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">/* IIFE */</span> &#125;());</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> n = ~~<span class="number">3.14</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> n = <span class="built_in">Math</span>.floor(<span class="number">3.14</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="u4EE3_u7801_u91CD_u7528"><a href="#u4EE3_u7801_u91CD_u7528" class="headerlink" title="代码重用"></a>代码重用</h3><p>对写些小型、组件化、可重用的方法。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">arr[arr.length - <span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> first = arr =&gt; arr[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">const</span> last = arr =&gt; first(arr.slice(-<span class="number">1</span>));</span><br><span class="line">last(arr);</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> product = (a, b) =&gt; a * b;</span><br><span class="line"><span class="keyword">const</span> triple = n =&gt; n * <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> product = (a, b) =&gt; a * b;</span><br><span class="line"><span class="keyword">const</span> triple = product.bind(<span class="literal">null</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="u4F9D_u8D56"><a href="#u4F9D_u8D56" class="headerlink" title="依赖"></a>依赖</h3><p>减少第三方库的使用。当你无法完成某项工作时可以使用，但不要为了一些能自己实现的小功能就加载一个很大的库。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">"underscore"</span>);</span><br><span class="line">_.compact([<span class="string">"foo"</span>, <span class="number">0</span>]));</span><br><span class="line">_.unique([<span class="string">"foo"</span>, <span class="string">"foo"</span>]);</span><br><span class="line">_.union([<span class="string">"foo"</span>], [<span class="string">"bar"</span>], [<span class="string">"foo"</span>]);</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> compact = arr =&gt; arr.filter(el =&gt; el);</span><br><span class="line"><span class="keyword">const</span> unique = arr =&gt; [...Set(arr)];</span><br><span class="line"><span class="keyword">const</span> union = (...arr) =&gt; unique([].concat(...arr));</span><br><span class="line"></span><br><span class="line">compact([<span class="string">"foo"</span>, <span class="number">0</span>]);</span><br><span class="line">unique([<span class="string">"foo"</span>, <span class="string">"foo"</span>]);</span><br><span class="line">union([<span class="string">"foo"</span>], [<span class="string">"bar"</span>], [<span class="string">"foo"</span>]);</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2015/12/23/前端面试题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端面试题</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+  
+    <a href="/blog/2016/01/28/面试那些事－HTML篇/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          面试那些事－HTML篇
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo" id="comments">
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="2016/01/24/一份很受欢迎的前端代码指南/" data-title="一份很受欢迎的前端代码指南" data-url="hynal.com/blog/2016/01/24/一份很受欢迎的前端代码指南/"></div>
+<!-- 多说评论框 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <a id="back-to-top" href="javascript:void(0);" class="iconfont icon-top"></a>
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Under 7℃
+    	</div>
+      <div class="footer-right">
+      		How should I greet thee, with silence and tears.
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: false,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/blog/js/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="/blog/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("oguTdGaNpChzF7idbkUPyF2D-gzGzoHsz", "YCT7S6yFVyrax7GaF1vqtLVb");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.archive-article-title, .article-title').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script type="text/javascript">
+	var duoshuoQuery = {short_name:"hynal"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+
+  </div>
+</body>
+</html>
