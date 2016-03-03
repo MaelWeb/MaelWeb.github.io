@@ -1,6 +1,6 @@
 /*
  * 模板渲染，不能防备xss。
- * 如果有xss防备需求，请使用ejs等具备该功能的模板引擎
+ *
  */
 'use strtic'
 
@@ -80,27 +80,33 @@ window._toread = {
         img: "http://7xqfgq.com1.z0.glb.clouddn.com/%E5%8D%95%E6%81%8B.jpg",
         excerpt: "一个深藏内心的秘密究竟有多大杀伤力？哲朗与美月久别重逢，十年前的一夜缱绻如在昨日...",
         link: "https://read.douban.com/ebook/9440506/"
+    },{
+        title: "JAVASCRIPT语言精髓与编程实践",
+        author: "周爱民 ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s2970031.jpg",
+        excerpt: "主要包括以下三个方面的内容：（1）动态、函数式语言，以及其它语言特性在JavaScript的表现与应用；（2）如何用动态函数式语言的特性来扩展JavaScript的语言特性与框架；（3）如何将JavaScript引擎整合到其它高级语言的开发过程中。",
+        link: "http://www.amazon.cn/mn/detailApp/ref=asc_df_B0017KOV8E1999593/?asin=B0017KOV8E&tag=douban-23&creative=2384&creativeASIN=B0017KOV8E&linkCode=df0"
     }],
 };
 window._year = {
     data: [{
-        title: "阿弥陀佛么么哒",
-        author: "大冰 ",
-        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s28259771.jpg",
-        excerpt: "请相信，这个世界上真的有人在过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。",
-        link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=CE14FFA5FDFFC204A3F9952F9D17D7F0?id=1900492476"
+        title: "白夜行",
+        author: "东野圭吾 ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s4610502.jpg",
+        excerpt: "“只希望能手牵手在太阳下散步”，这个象征故事内核的绝望念想，有如一个美丽的幌子，随着无数凌乱、压抑、悲凉的故事片段像纪录片一样一一还原……",
+        link: "https://read.douban.com/reader/ebook/680843/"
     },{
-        title: "单恋",
+        title: "活着",
+        author: "余华",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s23836852.jpg",
+        excerpt: "每读一页，都让我们止不住泪湿双眼，因为生命里难得的温情将被一次次死亡撕扯得粉碎，只剩得老了的福贵伴随着一头老牛在阳光下回忆。",
+        link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=8ECCBB61DFA087224081AEE9FD486102?id=1900386506"
+    },{
+        title: "幻夜",
         author: "东野圭吾",
-        img: "http://7xqfgq.com1.z0.glb.clouddn.com/%E5%8D%95%E6%81%8B.jpg",
-        excerpt: "一个深藏内心的秘密究竟有多大杀伤力？哲朗与美月久别重逢，十年前的一夜缱绻如在昨日...",
-        link: "https://read.douban.com/ebook/9440506/"
-    },{
-        title: "AngularJS深度剖析与最佳实践",
-        author: "雪狼 破狼 彭洪伟",
-        img: "http://7xqfgq.com1.z0.glb.clouddn.com/angularjs.jpg",
-        excerpt: "深入讲解AngularJS的基本概念及其背后的原理，包括完整的开发框架与实践。不仅抽丝剥茧地展现了AngularJS的诸多特性与技巧，还讲解了工程实践中容易陷入的“坑”，是从小工走向专家的必备参考。",
-        link: "https://read.douban.com/reader/ebook/17826372/"
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s3960322.jpg",
+        excerpt: "他们相偕前往东京，然而等待他们的，却是从此再无一丝太阳的无边幻夜：凡是接近过她的人，都遭逢厄运；凡是触碰过她过去的人，都不知所踪……",
+        link: "https://read.douban.com/reader/ebook/698016/"
     }],
 };
 window._js = {
@@ -122,6 +128,18 @@ window._js = {
         img: "http://7xqfgq.com1.z0.glb.clouddn.com/41ae83c0-f276-451a-8fca-3f769820f3d1.jpg",
         excerpt: "JavaScript技术经典名著，在详细讲解了JavaScript语言的核心，条分缕析地为读者展示了现有规范及实现为开发Web应用提供的各种支持和特性。",
         link: "http://cread.e.jd.com/read/startRead.action?bookId=30137817&readType=1"
+    },{
+        title: "ECMAScript6入门",
+        author: "阮一峰",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s28315395.jpg",
+        excerpt: "全面介绍了ECMAScript6新引入的语法特性，覆盖了ECMAScript6与ECMAScript5的所有不同之处，对涉及的语法知识给予了详细介绍，并给出了大量简洁易懂的示例代码。",
+        link: "http://e.dangdang.com/html/reader.html?productId=1900366150&bookUid=br.141466668691055626"
+    },{
+        title: "JAVASCRIPT语言精髓与编程实践",
+        author: "周爱民 ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s2970031.jpg",
+        excerpt: "主要包括以下三个方面的内容：（1）动态、函数式语言，以及其它语言特性在JavaScript的表现与应用；（2）如何用动态函数式语言的特性来扩展JavaScript的语言特性与框架；（3）如何将JavaScript引擎整合到其它高级语言的开发过程中。",
+        link: "http://www.amazon.cn/mn/detailApp/ref=asc_df_B0017KOV8E1999593/?asin=B0017KOV8E&tag=douban-23&creative=2384&creativeASIN=B0017KOV8E&linkCode=df0"
     }],
 };
 window._html_css = {
@@ -152,6 +170,24 @@ window._novel = {
         img: "http://7xqfgq.com1.z0.glb.clouddn.com/s28259771.jpg",
         excerpt: "请相信，这个世界上真的有人在过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。",
         link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=CE14FFA5FDFFC204A3F9952F9D17D7F0?id=1900492476"
+    },{
+        title: "白夜行",
+        author: "东野圭吾 ",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s4610502.jpg",
+        excerpt: "“只希望能手牵手在太阳下散步”，这个象征故事内核的绝望念想，有如一个美丽的幌子，随着无数凌乱、压抑、悲凉的故事片段像纪录片一样一一还原……",
+        link: "https://read.douban.com/reader/ebook/680843/"
+    },{
+        title: "活着",
+        author: "余华",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s23836852.jpg",
+        excerpt: "每读一页，都让我们止不住泪湿双眼，因为生命里难得的温情将被一次次死亡撕扯得粉碎，只剩得老了的福贵伴随着一头老牛在阳光下回忆。",
+        link: "http://e.dangdang.com/pc/reader/index.html;jsessionid=8ECCBB61DFA087224081AEE9FD486102?id=1900386506"
+    },{
+        title: "幻夜",
+        author: "东野圭吾",
+        img: "http://7xqfgq.com1.z0.glb.clouddn.com/s3960322.jpg",
+        excerpt: "他们相偕前往东京，然而等待他们的，却是从此再无一丝太阳的无边幻夜：凡是接近过她的人，都遭逢厄运；凡是触碰过她过去的人，都不知所踪……",
+        link: "https://read.douban.com/reader/ebook/698016/"
     }],
 };
 window._other = {
