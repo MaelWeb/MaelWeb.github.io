@@ -407,22 +407,10 @@
         iPad = false,
         userAgent = navigator.userAgent;
     if (userAgent.match("Android")) {
-        _hip.push(['mv', {
-            module: 'Synthesislink_UA_Android_6702',
-            action: 'browser'
-        }]);
         isAndroid = true;
     } else if (userAgent.match("iPhone")) {
-        _hip.push(['mv', {
-            module: 'Synthesislink_UA_IPhone_6702',
-            action: 'browser'
-        }]);
         iPhone = true;
     } else if (userAgent.match("iPad")) {
-        _hip.push(['mv', {
-            module: 'Synthesislink_UA_IPad_6702',
-            action: 'browser'
-        }]);
         iPad = true;
     }
     var redirect_url = "";
@@ -432,11 +420,13 @@
             div.style.visibility = 'hidden';
             div.innerHTML = '<iframe id="schema" src="' + openLink_1 + '" scrolling="no" width="1" height="1"></iframe>';
             document.body.appendChild(div);
+            console.log("android");
         }
         if (iPhone || iPad) {
             setTimeout(function() {
                 window.location = openLink_1;
             }, 50);
+            console.log("iphone");
         }
         if (openLink_3 != "") {
             redirect_url = openLink_3;
@@ -444,7 +434,6 @@
     } else if (openLink_3 != "") {
         redirect_url = openLink_3;
     }
-    console.log(_hip);
     if (redirect_url) {
         setTimeout(function() {
             window.location = redirect_url;
@@ -456,8 +445,7 @@
             <div class="logo">
                 <img width="136" height="83" src="http://evt.dianping.com/synthesislink/image/logo.png" alt="logo">
             </div>
-            <a class="download-btn" onclick="_hip.push(['mv', {module:'synthesislink_download_6702',action:'click'}]);" href="http://m.dianping.com/download/redirect?id=6702">下载大众点评客户端</a>
-            <a class="continue-btn" id="js-continue" onclick="_hip.push(['mv', {module:'synthesislink_continue_6702',action:'click'}]);" href="javascript:void(0)">继续访问触屏版</a>
+            <a class="download-btn" onclick="">下载大众点评客户端</a>
         </div>
 </body>
 
