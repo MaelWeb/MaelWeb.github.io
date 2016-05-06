@@ -1,0 +1,464 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="//cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #eeeeee;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .clearfix:before {
+        content: '';
+        display: block;
+    }
+    
+    .clearfix:after {
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    
+    .line-bottom {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAAA3NCSVQICAjb4U/gAAAABlBMVEX////k5ORmXLuLAAAAAnRSTlMA/1uRIrUAAAAJcEhZcwAAFf0AABX9Ac1wUWEAAAAXdEVYdENyZWF0aW9uIFRpbWUAMjAxNC4xMi40hE/IegAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAMSURBVAiZY2BgOAAAAMQAwbn75sMAAAAASUVORK5CYII=);
+        background-repeat: repeat-x;
+        background-position: 0 bottom;
+        background-size: auto 1px;
+    }
+    
+    .main {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    .title {
+        padding: 56px 30px 330px 30px;
+        /* 动态置地下面高度为290，相隔要有40px,所以为 290+40=330 */
+        text-align: center;
+    }
+    
+    .title.onlytitle {
+        padding: 100px 30px 44px 30px;
+    }
+    
+    .title .logo {
+        margin: 0 0 24px 0;
+    }
+    
+    .title .download-btn {
+        display: block;
+        line-height: 43px;
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        border-radius: 4px;
+        background: #ff6633;
+        color: #fff;
+    }
+    
+    .title .continue-btn {
+        font-size: 18px;
+        color: #38b;
+        text-align: center;
+    }
+    
+    .snapup {
+        position: absolute;
+        visibility: hidden;
+        bottom: 0;
+        width: 100%;
+        /*height: 290px; /!* 为了做动态置地功能，经过计算为290高 *!/*/
+        background: #fff;
+    }
+    
+    .snapup .snapup-title {
+        padding: 15px 0 0 15px;
+        color: #ff922b;
+    }
+    
+    .snapup .shop-item {
+        display: block;
+        margin: 0 0 0 15px;
+        padding: 10px 15px 10px 0;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAAA3NCSVQICAjb4U/gAAAABlBMVEX////k5ORmXLuLAAAAAnRSTlMA/1uRIrUAAAAJcEhZcwAAFf0AABX9Ac1wUWEAAAAXdEVYdENyZWF0aW9uIFRpbWUAMjAxNC4xMi40hE/IegAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAMSURBVAiZY2BgOAAAAMQAwbn75sMAAAAASUVORK5CYII=) 0 bottom repeat-x;
+        background-size: auto 1px;
+    }
+    
+    .snapup .shop-item:last-child {
+        background: none;
+    }
+    
+    .snapup .logo-img {
+        display: block;
+        float: left;
+    }
+    
+    .snapup .shop-info {
+        float: left;
+        max-width: 50%;
+        padding: 6px 0 0 15px;
+    }
+    
+    .snapup .tip-status {
+        float: right;
+        margin: 10px 0 0 0;
+        padding: 10px;
+        border-radius: 2px;
+        background: #ff6633;
+        color: #fff;
+    }
+    
+    .snapup .shop-name {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        color: #333;
+        white-space: nowrap;
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    .snapup .price {
+        float: left;
+        margin: 4px 5px 0 0;
+        font-size: 24px;
+        font-family: sans-serif;
+        color: #ff6633;
+    }
+    
+    .snapup .price .symbol {
+        font-size: 14px;
+    }
+    
+    .snapup .discount {
+        float: left;
+        font-size: 12px;
+    }
+    
+    .snapup .discount .privilege {
+        margin: 0 0 2px 0;
+        color: #fff;
+    }
+    
+    .snapup .discount .privilege .arrow {
+        float: left;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-right: 10px solid #ff6633;
+        border-bottom: 9px solid transparent;
+    }
+    
+    .snapup .discount .privilege {
+        height: 16px;
+    }
+    
+    .snapup .discount .privilege .text {
+        float: left;
+        line-height: 16px;
+        padding: 0 8px 0 2px;
+        font-size: 9px;
+        font-weight: bold;
+        background: #ff6633;
+    }
+    
+    .snapup .discount .old-price {
+        color: #999;
+    }
+    
+    .snapup .discount .delete {
+        position: relative;
+        white-space: nowrap;
+    }
+    
+    .snapup .discount .delete:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40%;
+        border-top: 1px solid #999;
+        content: "";
+    }
+    
+    .Hide {
+        display: none !important;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .bord {
+        height: 10px;
+        background-color: #f0f0f0;
+    }
+    
+    .Fix:after {
+        display: block;
+        content: '';
+        height: 0;
+        clear: both;
+    }
+    
+    .Left {
+        float: left !important;
+    }
+    
+    .Right {
+        float: right !important;
+    }
+    
+    body {
+        font-family: Hiragino Sans GB, Arial, Helvetica, "宋体", sans-serif;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .container .for_new_comer {
+        background-color: white;
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+    
+    .container .for_new_comer .new_comer_word {
+        height: 36px;
+        color: #ffab33;
+        font-weight: bold;
+        line-height: 44px;
+        font-size: 20px;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDg0NjJGODhFOUY3MTFFMzgyNDZBNkRCNjM5MDI2MzkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDg0NjJGODdFOUY3MTFFMzgyNDZBNkRCNjM5MDI2MzkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjZCQ0M0ODFERjAyMTFFMzg5RDE4NENEQUZENTUzNEYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjZCQ0M0ODJERjAyMTFFMzg5RDE4NENEQUZENTUzNEYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5EbLiBAAAAGUlEQVR42mL6//8/AwizPHr06D8DEAAEGABriwmmt+2WgAAAAABJRU5ErkJggg==);
+        background-repeat: repeat-x;
+        background-position: 0 bottom;
+        background-size: auto 1px;
+        height: 102px;
+        display: -webkit-box;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item:last-child {
+        background-image: none;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .pic_item {
+        width: 108px;
+        padding-top: 11px;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .new_comer_content {
+        -webkit-box-flex: 1;
+        padding: 10px 10px 0;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .new_comer_content .new_comer_title {
+        font-size: 16px;
+        color: #333333;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .new_comer_content .new_comer_sub {
+        font-size: 12px;
+        color: #666666;
+        margin-top: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .new_comer_content .new_comer_price {
+        margin-top: -2px;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .new_comer_content .new_comer_price .current_price {
+        color: #ff6633;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .new_comer_content .new_comer_price .current_price .price_unit {
+        font-size: 12px;
+        font-weight: normal;
+        padding-left: 2px;
+    }
+    
+    .container .for_new_comer .new_comer_list .new_comer_item .new_comer_content .new_comer_price .old_price {
+        color: #666666;
+        font-size: 12px;
+    }
+    
+    .btnBlock {
+        height: 60px;
+        width: 100%;
+        background-color: #f0f0f0;
+        bottom: 0;
+        padding: 2px 15px;
+        box-sizing: border-box;
+    }
+    
+    .submitBtn {
+        display: block;
+        height: 44px;
+        background-color: #ff6633;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 44px;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .submitBtn .hrefdper {
+        background-size: 23px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        margin-left: -98px;
+    }
+    
+    .submitBtn .hrefsub {
+        text-align: left;
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        top: 1px;
+        -webkit-transform: translateX(-37%);
+        transform: translateX(-37%);
+    }
+    
+    .href_continue {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        text-decoration: underline;
+        color: #727272;
+    }
+    </style>
+</head>
+
+<body>
+    <script>
+    var openLink_1 = "wandaappfeifan://",
+        openLink_2 = "",
+        openLink_3 = "",
+        downloadLink_android = "http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui",
+        downloadLink_iphone = "https://itunes.apple.com/us/app/wan-hui/id653384976?ls=1&mt=8",
+        downloadLink_ipad = "https://itunes.apple.com/us/app/wan-hui/id653384976?ls=1&mt=8";
+
+    function parseUrlFunc(url) {
+        if (url.indexOf("{") >= 0) {
+            var reg = new RegExp("\{[^\}]+\}", "g");
+            var r = url.match(reg);
+            if (r != null) {
+                for (var i = 0; i < r.length; i++) {
+                    var name = getUrlParam(r[i].substring(1, r[i].length - 1));
+                    if (name != null) {
+                        url = url.replace(r[i], name);
+                    } else {
+                        url = url.replace(r[i], '');
+                    }
+                }
+            }
+        }
+        return url;
+    }
+
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURIComponent(r[2]);
+        return null;
+    }
+
+    function processUrlFunc(url) {
+        var result = parseUrlFunc(url);
+        if (result.indexOf("wandaappfeifan:\/\/") >= 0) {
+            var reg = new RegExp("url=[^&]+", "g");
+            var r = result.match(reg);
+            if (r != null) {
+                var urlStr = encodeURIComponent(parseUrlFunc(decodeURIComponent(r[0].substring(4))));
+                result = result.replace(r[0], "url=" + urlStr);
+            }
+        }
+        return result;
+    }
+    openLink_1 = processUrlFunc(openLink_1);
+    openLink_2 = processUrlFunc(openLink_2);
+    openLink_3 = processUrlFunc(openLink_3);
+    downloadLink_android = processUrlFunc(downloadLink_android);
+    downloadLink_iphone = processUrlFunc(downloadLink_iphone);
+    downloadLink_ipad = processUrlFunc(downloadLink_ipad);
+    var isAndroid = false,
+        iPhone = false,
+        iPad = false,
+        userAgent = navigator.userAgent;
+    if (userAgent.match("Android")) {
+        _hip.push(['mv', {
+            module: 'Synthesislink_UA_Android_6702',
+            action: 'browser'
+        }]);
+        isAndroid = true;
+    } else if (userAgent.match("iPhone")) {
+        _hip.push(['mv', {
+            module: 'Synthesislink_UA_IPhone_6702',
+            action: 'browser'
+        }]);
+        iPhone = true;
+    } else if (userAgent.match("iPad")) {
+        _hip.push(['mv', {
+            module: 'Synthesislink_UA_IPad_6702',
+            action: 'browser'
+        }]);
+        iPad = true;
+    }
+    var redirect_url = "";
+    if (isAndroid || iPhone || iPad) {
+        if (isAndroid) {
+            div = document.createElement('div');
+            div.style.visibility = 'hidden';
+            div.innerHTML = '<iframe id="schema" src="' + openLink_1 + '" scrolling="no" width="1" height="1"></iframe>';
+            document.body.appendChild(div);
+        }
+        if (iPhone || iPad) {
+            setTimeout(function() {
+                window.location = openLink_1;
+            }, 50);
+        }
+        if (openLink_3 != "") {
+            redirect_url = openLink_3;
+        }
+    } else if (openLink_3 != "") {
+        redirect_url = openLink_3;
+    }
+    console.log(_hip);
+    if (redirect_url) {
+        setTimeout(function() {
+            window.location = redirect_url;
+        }, 500);
+    }
+    </script>
+    <div class="main">
+        <div class="title" id="title">
+            <div class="logo">
+                <img width="136" height="83" src="http://evt.dianping.com/synthesislink/image/logo.png" alt="logo">
+            </div>
+            <a class="download-btn" onclick="_hip.push(['mv', {module:'synthesislink_download_6702',action:'click'}]);" href="http://m.dianping.com/download/redirect?id=6702">下载大众点评客户端</a>
+            <a class="continue-btn" id="js-continue" onclick="_hip.push(['mv', {module:'synthesislink_continue_6702',action:'click'}]);" href="javascript:void(0)">继续访问触屏版</a>
+        </div>
+</body>
+
+</html>
