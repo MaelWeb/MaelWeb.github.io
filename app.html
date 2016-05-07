@@ -198,7 +198,7 @@
                 // android 下 chrome 浏览器通过 intent 协议唤起钱包
                 var packageKey = 'com.wanda.app.wanhui';
 
-                var intentUrl = 'intent://m.ffan.com/app.html?' + o.params + '#Intent;scheme=' + schemePrefix + ';package=com.eg.android.' + packageKey + ';end';
+                var intentUrl = 'intent://m.ffan.com/app.html?' + o.params + '#Intent;scheme=' + schemePrefix + ';package=' + packageKey + ';end';
 
                 var openIntentLink = document.getElementById('openIntentLink');
                 if (!openIntentLink) {
