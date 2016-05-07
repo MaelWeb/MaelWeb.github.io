@@ -136,7 +136,7 @@
                 // android 下 chrome 浏览器通过 intent 协议唤起钱包
                 var packageKey = 'com.wanda.app.wanhui';
 
-                var intentUrl = 'intent://m.ffan.com/app.html?' + o.params + '#Intent;scheme=' + schemePrefix + ';package=' + packageKey + ';S.browser_fallback_url=http%3A%2F%2Fm.ffan.com;end';
+                var intentUrl = 'intent://m.ffan.com/app.html?' + o.params + '#Intent;scheme=' + schemePrefix + ';package=' + packageKey + ';S.browser_fallback_url=http%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.wanda.app.wanhui;end';
 
                 var openIntentLink = document.getElementById('openIntentLink');
                 if (!openIntentLink) {
@@ -147,7 +147,7 @@
                 }
                 openIntentLink.href = intentUrl;
                 // 执行click
-                openIntentLink.dispatchEvent(customClickEvent());
+                //openIntentLink.dispatchEvent(customClickEvent());
             }
 
             // 延迟移除用来唤起钱包的IFRAME并跳转到下载页
@@ -190,7 +190,6 @@
     <div class="main">
         <div class="title" id="title">
             <a class="download-btn" id="openIntentLink" href="">打开APP</a>
-            <a href="intent://www.kaola.com/product/8342.html#Intent;scheme=kaola;package=com.kaola;S.browser_fallback_url=http%3A%2F%2Fapp.kaola.com;end">打开APP</a>
         </div>
     </div>
 </body>
