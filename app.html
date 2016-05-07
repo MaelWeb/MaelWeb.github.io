@@ -121,6 +121,7 @@
                         openSchemeLink.id = 'openSchemeLink';
                         openSchemeLink.style.display = 'none';
                         document.body.appendChild(openSchemeLink);
+                        console.log(111);
                     }
                     openSchemeLink.href = feifanUrl;
                     // 执行click
@@ -135,7 +136,7 @@
                 // android 下 chrome 浏览器通过 intent 协议唤起钱包
                 var packageKey = 'com.wanda.app.wanhui';
 
-                var intentUrl = 'intent://m.ffan.com/app.html?' + o.params + '#Intent;scheme=' + schemePrefix + ';package=' + packageKey + ';end';
+                var intentUrl = 'intent://m.ffan.com/app.html?' + o.params + '#Intent;scheme=' + schemePrefix + ';package=' + packageKey + 'S.browser_fallback_url＝http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui;end';
 
                 var openIntentLink = document.getElementById('openIntentLink');
                 if (!openIntentLink) {
