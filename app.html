@@ -48,11 +48,14 @@
                 if (appInstall.isChrome) {
                     if (appInstall.isAndroid) {
                         win.location.href = getChromeIntent(appurl);
+                        console.log(appInstall.isAndroid);
                     } else {
                         win.location.href = appurl;
+                        console.log("no android");
                     }
                 } else {
                     getIntentIframe().src = appurl;
+                     console.log("no iphone");
                 }
             },
             openH5: function(h5url) {
