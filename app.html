@@ -8,7 +8,7 @@
 <body>
     <div class="main">
         <div class="title" id="title">
-            <a class="download-btn" id="openIntentLink" href="intent://www.hynal.com/app.html#Intent;scheme=wandaappfeifan;package=com.wanda.app.wanhui;end">下载飞凡客户端</a>
+            <a class="download-btn" id="openIntentLink" href="">下载飞凡客户端</a>
         </div>
     </div>
     <script>
@@ -154,9 +154,6 @@
             if (typeof o.params !== 'string') {
                 o.params = '';
             }
-            if (typeof o.openAppStore !== 'boolean') {
-                o.openAppStore = true;
-            }
 
             if (o.params.indexOf('startapp?') > -1) {
                 o.params = o.params.split('startapp?')[1];
@@ -188,7 +185,9 @@
                     openSchemeLink.href = feifanUrl;
                     // 执行click
                     openSchemeLink.dispatchEvent(customClickEvent());
+                    console.log(111);
                 } else {
+                    console.log(111999);
                     var ifr = document.createElement('iframe');
                     ifr.src = feifanUrl;
                     ifr.style.display = 'none';
@@ -246,8 +245,7 @@
     })();
     FeifanWallet.open({
         params: "",
-        jumpUrl: '',
-        openAppStore: false
+        jumpUrl: ''
     });
     </script>
 </body>
