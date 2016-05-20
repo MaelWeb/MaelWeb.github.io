@@ -27,13 +27,13 @@
         <p>{{openLink}}</p>
         <p ng-show="ios9">ios9</p>
         <br>
-        <div class="title" id="title">
-            <a class="download-btn" id="openIntentLink" href="{{openLink}}" ng-click="toDownload()">打开APP</a>
+        <div class="title" id="title" ng-click="toDownload()">
+            <a class="download-btn" id="openIntentLink" href="{{openLink}}">打开APP</a>
         </div>
     </div>
     <script type="text/javascript">
     angular.module("app", []).config(['$compileProvider', function($compileProvider) {
-        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|wandaappfeifan|intent|chrome-extension):/);
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|wandaappfeifan|intent|wandafeifanapp|chrome-extension):/);
     }]).controller('appCtrl', ['$scope', '$window', function($scope, $window) {
         var ua = navigator.userAgent.toLowerCase(),
             noIntentTest = /360 aphone|weibo|windvane|ucbrowser|baidubrowser/.test(ua),
