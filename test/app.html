@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <script src="./angular.js"></script>
+    <script src="./angular-touch.js"></script>
     <style type="text/css">
         a {
             padding: 5px;
@@ -27,13 +28,13 @@
         <p>{{openLink}}</p>
         <p ng-show="ios9">ios9</p>
         <br>
-        <div class="title" id="title">
+        <div class="title" id="title" ng-click="toDownload()">
             <a class="download-btn" id="openIntentLink" href="{{openLink}}">打开APP</a>
         </div>
     </div>
     <script type="text/javascript">
-    angular.module("app", []).config(['$compileProvider', function($compileProvider) {
-        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|wandaappfeifan|intent|chrome-extension):/);
+    angular.module("app", ["ngTouch"]).config(['$compileProvider', function($compileProvider) {
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|wandaappfeifan|intent|wandafeifanapp|chrome-extension):/);
     }]).controller('appCtrl', ['$scope', '$window', function($scope, $window) {
         var ua = navigator.userAgent.toLowerCase(),
             noIntentTest = /360 aphone|weibo|windvane|ucbrowser|baidubrowser/.test(ua),
@@ -57,7 +58,6 @@
         // }
 
         $scope.toDownload = function() {
-            TrackingService.tracking("M_FFAN_APP_DOWNLOAD");
             if (!canIntent && !isWechat) {
                 if (!(ua.indexOf('qq/') > -1 || (ua.indexOf('safari') > -1 && ua.indexOf('os 9_') > -1))) {
                     $scope.ios9 = true;
@@ -84,9 +84,7 @@
 
         function _check(elsTime) {
             if (elsTime > 3000 || document.hidden || document.webkitHidden) {
-                TrackingService.tracking("M_REVOKE_FFAN_APP");
             } else {
-                TrackingService.tracking("M_TENCENT_APPLICATION_TREASURE");
                 isiOS && ($window.location.href = 'https://itunes.apple.com/us/app/wan-hui/id653384976?ls=1&mt=8');
                 isAndroid && !canIntent && ($window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui");
             }
