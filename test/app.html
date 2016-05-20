@@ -57,7 +57,6 @@
         }
 
         $scope.toDownload = function() {
-            TrackingService.tracking("M_FFAN_APP_DOWNLOAD");
             if (!canIntent && !isWechat) {
                 if (!(ua.indexOf('qq/') > -1 || (ua.indexOf('safari') > -1 && ua.indexOf('os 9_') > -1))) {
                     $scope.ios9 = true;
@@ -84,9 +83,7 @@
 
         function _check(elsTime) {
             if (elsTime > 3000 || document.hidden || document.webkitHidden) {
-                TrackingService.tracking("M_REVOKE_FFAN_APP");
             } else {
-                TrackingService.tracking("M_TENCENT_APPLICATION_TREASURE");
                 isiOS && ($window.location.href = 'https://itunes.apple.com/us/app/wan-hui/id653384976?ls=1&mt=8');
                 isAndroid && !canIntent && ($window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui");
             }
