@@ -49,11 +49,11 @@
         $scope.ios9 = false;
 
         if (!canIntent && !isWechat) {
-            $scope.openLink = "wandafeifanapp://";
+            //$scope.openLink = "wandafeifanapp://";
         } else {
             var intentUrl = "intent://m.ffan.com#Intent;scheme=wandaappfeifan;package=com.wanda.app.wanhui;S.browser_fallback_url=http%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.wanda.app.wanhui;end";
 
-            $scope.openLink = intentUrl;
+            //$scope.openLink = intentUrl;
         }
 
         $scope.toDownload = function() {
