@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <script src="./angular.js"></script>
+    <style type="text/css">
+        a {
+            padding: 5px;
+            background-color: #2abfff;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .title {
+            height: 40px;
+        }
+        p {
+            word-break:break-all;
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+    <div class="main" ng-controller="appCtrl">
+        <p>{{openLink}}</p>
+        <p ng-show="ios9">ios9</p>
+        <br>
+        <div class="title" id="title">
+            <a class="download-btn" id="openIntentLink" href="{{openLink}}">打开APP</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+    angular.module("app", []).config(['$compileProvider', function($compileProvider) {
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|wandaappfeifan|intent|chrome-extension):/);
+    }]).controller('appCtrl', ['$scope', '$window', function($scope, $window) {
+        var ua = navigator.userAgent.toLowerCase(),
+            noIntentTest = /360 aphone|weibo|windvane|ucbrowser|baidubrowser/.test(ua),
+            hasIntentTest = /chrome|samsung/.test(ua),
+            isAndroid = /android|adr/.test(ua) && !(/windows phone/.test(ua)),
+            isiOS = !!ua.match(/\(i[^;]+;( u;)? cpu.+mac os x/),
+            isWechat = /micromessenger/i.test(ua) || /windows phone/i.test(ua),
+            canIntent = !noIntentTest && hasIntentTest && isAndroid,
+            openInIfr = /weibo|m353/.test(ua),
+            inWeibo = ua.indexOf('weibo') > -1;
+
+        $scope.openLink = "http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui";
+        $scope.ios9 = false;
+
+        if (!canIntent && !isWechat) {
+            $scope.openLink = "wandafeifanapp://";
+        } else {
+            var intentUrl = "intent://m.ffan.com#Intent;scheme=wandaappfeifan;package=com.wanda.app.wanhui;S.browser_fallback_url=http%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.wanda.app.wanhui;end";
+
+            $scope.openLink = intentUrl;
+        }
+
+        $scope.toDownload = function() {
+            TrackingService.tracking("M_FFAN_APP_DOWNLOAD");
+            if (!canIntent && !isWechat) {
+                if (!(ua.indexOf('qq/') > -1 || (ua.indexOf('safari') > -1 && ua.indexOf('os 9_') > -1))) {
+                    $scope.ios9 = true;
+                    var ifr = document.createElement('iframe');
+                    ifr.src = "wandafeifanapp://";
+                    ifr.style.display = 'none';
+                    document.body.appendChild(ifr);
+                }
+            }
+            var _clickTime = +(new Date());
+
+            //启动间隔20ms运行的定时器，并检测累计消耗时间是否超过3000ms，超过则结束
+            var _count = 0,
+                intHandle;
+            intHandle = setInterval(function() {
+                _count++;
+                var elsTime = +(new Date()) - _clickTime;
+                if (_count >= 100 || elsTime > 3000) {
+                    clearInterval(intHandle);
+                    _check(elsTime);
+                }
+            }, 20);
+        };
+
+        function _check(elsTime) {
+            if (elsTime > 3000 || document.hidden || document.webkitHidden) {
+                TrackingService.tracking("M_REVOKE_FFAN_APP");
+            } else {
+                TrackingService.tracking("M_TENCENT_APPLICATION_TREASURE");
+                isiOS && ($window.location.href = 'https://itunes.apple.com/us/app/wan-hui/id653384976?ls=1&mt=8');
+                isAndroid && !canIntent && ($window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui");
+            }
+        }
+    }])
+    </script>
+</body>
+
+</html>
