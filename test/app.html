@@ -9,7 +9,7 @@
 <body ng-app="app">
     <div class="main">
         <div class="title" id="title">
-            <a class="download-btn" id="openIntentLink"  href="wandaappfeifan://smartHistory">打开APP</a>
+            <a class="download-btn" id="openIntentLink"  href="javascript:void(0);">打开APP</a>
         </div>
     </div>
     <!-- <script type="text/javascript">
@@ -73,7 +73,7 @@
     </script> -->
     <script type="text/javascript">
     $("#openIntentLink").on("click", function(e) {
-        var url = "wandaappfeifan://smartHistory";
+        var url = "wandaappfeifan://FlashSalePlaza?cityId=110100";
         // window.location = url;
         console.log(url);
         e.stopPropagation();
