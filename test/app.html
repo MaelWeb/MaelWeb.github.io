@@ -2,37 +2,17 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <script src="./angular.js"></script>
-    <script src="./angular-touch.js"></script>
-    <style type="text/css">
-        a {
-            padding: 5px;
-            background-color: #2abfff;
-            border-radius: 4px;
-            text-decoration: none;
-            color: #fff;
-            margin-top: 20px;
-        }
-        .title {
-            height: 40px;
-        }
-        p {
-            word-break:break-all;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <script type="./zepto-1.1.4.js"></script>
 </head>
 
 <body ng-app="app">
-    <div class="main" ng-controller="appCtrl">
-        <p>{{openLink}}</p>
-        <p ng-show="ios9">ios9</p>
-        <br>
-        <div class="title" id="title" ng-click="toDownload()">
-            <a class="download-btn" id="openIntentLink" link href="{{openLink}}">打开APP</a>
+    <div class="main">
+        <div class="title" id="title">
+            <a class="download-btn" id="openIntentLink"  href="javascript:void(0);">打开APP</a>
         </div>
     </div>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     angular.module("app", ["ngTouch"]).config(['$compileProvider', function($compileProvider) {
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|wandaappfeifan|intent|wandafeifanapp|chrome-extension):/);
     }]).controller('appCtrl', ['$scope', '$window', function($scope, $window) {
@@ -90,6 +70,13 @@
             }
         }
     }]);
+    </script> -->
+    <script type="text/javascript">
+    $("#openIntentLink").on("click", function(e) {
+        var url = "wandaappfeifan://smartHistory";
+        window.location = url;
+        e.stopPropagation();
+    })
     </script>
 </body>
 
