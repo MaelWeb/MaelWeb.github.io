@@ -80,18 +80,21 @@
     <!--})-->
     <!--</script>-->
     <script>
-    with(new XMLHttpRequest) {
-      open("GET", "/");
-      onreadystatechange = function(){
-        if(readyState >= 2 && getResponseHeader('Date')){
-          console.log(getResponseHeader('Date'))
-          var serverTime = new Date(getResponseHeader('Date')).getTime();
-          console.log("servertime: " + serverTime)
-          abort();
+    var getServerTime = function() {
+        with(new XMLHttpRequest) {
+          open("GET", "/");
+          onreadystatechange = function(){
+            if(readyState >= 2 && getResponseHeader('Date')){
+              console.log(getResponseHeader('Date'))
+              var serverTime = new Date(getResponseHeader('Date')).getTime();
+              console.log("servertime: " + serverTime)
+              abort();
+            }
+          }
+          send();
         }
-      }
-      send();
-    }
+    };
+    setInterval(getServerTime, 1000);
     </script>
 </body>
 
