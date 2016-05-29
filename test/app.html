@@ -84,7 +84,10 @@
       open("GET", "/");
       onreadystatechange = function(){
         if(readyState >= 2 && getResponseHeader('Date')){
+            console.log(getResponseHeader());
           console.log(getResponseHeader('Date'))
+          var serverTime = new Date(getResponseHeader('Date')).getTime();
+          console.log("servertime: " + serverTime)
           abort();
         }
       }
