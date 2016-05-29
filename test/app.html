@@ -71,13 +71,25 @@
         }
     }]);
     </script> -->
-    <script type="text/javascript">
-    $("#openIntentLink").on("click", function(e) {
-        var url = "wandaappfeifan://FlashSalePlaza?cityId=110100";
-        window.location = url;
-        console.log(url);
-        e.stopPropagation();
-    })
+    <!--<script type="text/javascript">-->
+    <!--$("#openIntentLink").on("click", function(e) {-->
+    <!--    var url = "wandaappfeifan://FlashSalePlaza?cityId=110100";-->
+    <!--    window.location = url;-->
+    <!--    console.log(url);-->
+    <!--    e.stopPropagation();-->
+    <!--})-->
+    <!--</script>-->
+    <script>
+    with(new XMLHttpRequest) {
+      open("GET", "/");
+      onreadystatechange = function(){
+        if(readyState >= 2 && getResponseHeader('Date')){
+          console.log(getResponseHeader('Date'))
+          abort();
+        }
+      }
+      send();
+    }
     </script>
 </body>
 
