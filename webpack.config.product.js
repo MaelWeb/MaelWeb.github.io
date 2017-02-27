@@ -63,6 +63,10 @@ module.exports = {
             compressor: {
                 warnings: false
             }
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            'jQuery': 'jquery'
         })
     ]
 };
