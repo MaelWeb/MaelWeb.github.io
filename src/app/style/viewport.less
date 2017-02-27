@@ -1,0 +1,235 @@
+@media screen and (max-width: 975px) {
+    .wrap {
+        width: 85%;
+    }
+    .menu {
+        li {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .work .exper-wrap .portfolio {
+        li {
+            width: 27.5%;
+            margin: 1% 0 0 2%;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        background: url(/about/images/bg_m.jpg) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        h1 {
+            font-size: 1.5em;
+            span {
+                display: block;
+            }
+        }
+        .name {
+            width: 100px;
+            height: 100px;
+        }
+        .header-wrap {
+            &:before {
+                // height: 40%;
+            }
+        }
+    }
+    .menu {
+        position: relative;
+        padding: 10px 0;
+        .iconfont;
+        z-index: 222;
+        text-align: center;
+        .wrap {
+            position: static;
+        }
+        .m-menu {
+            height: 30px;
+            margin-top: 7px;
+            // margin-left: 50%;
+            float: right;
+            padding: 0 5px;
+            line-height: 30px;
+            color: #1b8872;
+            background-color: #fff;
+            border-radius: 4px;
+            .inline-block;
+            i {
+                margin-right: 2px;
+                font-size: 20px;
+            }
+        }
+        ul.mon_menu {
+            position: absolute;
+            right: 2.5%;
+            top: 55px;
+            width: 95px;
+            height: 0;
+            font-size: 12px;
+            background-color: #252e30;
+            border-radius: 4px;
+            box-shadow: 0 0 4px #fff;
+            overflow: hidden;
+            .transition;
+        }
+        ul.show {
+            height: 137px;
+        }
+        .logo {
+            position: static;
+            margin: 0;
+            float: left;
+            .m {
+                height: 35px;
+                width: 35px;
+                font-size: 24px;
+                line-height: 35px;
+            }
+            .ael {
+                height: 20px;
+                margin: 3px 0 0 -11px;
+                font-size: 18px;
+                line-height: 20px;
+                vertical-align: middle;
+            }
+        }
+        li {
+            height: 10px;
+            padding: 6px 5px;
+            margin-right: 0;
+            line-height: 11px;
+            border-bottom: 1px solid #fff;
+            letter-spacing: 0;
+            display: block;
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    .wrap {
+        width: 90%;
+        font-size: 1em;
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+    .about {
+        .wrap {
+            p {
+                font-size: 1em;
+                padding: 5px;
+            }
+        }
+    }
+    .work {
+        h3 {
+            font-size: 1.2em;
+        }
+        h4 {
+            font-size: 1em;
+        }
+        .box {
+            margin-bottom: 20px;
+            width: 115px;
+            height: 115px;
+            line-height: 115px;
+            p {
+                font-size: 1.2em;
+            }
+        }
+        .exper-wrap {
+            .experience {
+                h1 {
+                    font-size: 18px;
+                    padding: 5px 15px;
+                    margin-bottom: 5px;
+                }
+                section {
+                    margin: 0 10px;
+                    font-size: 14px;
+                    header>p {
+                        font-size: 12px;
+                    }
+                    h2 {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .portfolio {
+                width: 80%;
+                margin: 0 auto;
+                li {
+                    margin: 2% auto;
+                    padding: 10px 0;
+                    width: 100%;
+                    h1 {
+                        padding: 5px 0;
+                    }
+                    h1,
+                    p {
+                        padding-left: 10px;
+                        line-height: 1.1;
+                    }
+                }
+            }
+        }
+    }
+    .skill {
+        .skill-info {
+            li {
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                p {
+                    font-size: 1.3em;
+                }
+                &:before {
+                    transform: rotateX(105deg) translateZ(-71px);
+                }
+            }
+        }
+    }
+    .life {
+        li {
+            h4 {
+                font-size: 1em;
+            }
+        }
+    }
+    footer {
+        padding: 5px 0;
+        p {
+            margin: 5px 20px;
+            padding: 2px 5px;
+        }
+    }
+}
+
+@media screen and (max-height: 627px) {
+    .work {
+        .exper-wrap {
+            .experience {
+                .item-box {
+                    max-height: 480px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 568px) {
+    .work {
+        .exper-wrap {
+            .experience {
+                .item-box {
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}

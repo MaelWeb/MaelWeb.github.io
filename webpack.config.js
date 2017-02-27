@@ -4,15 +4,19 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var node_modules = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
-    entry: [
-        'webpack-dev-server/client?http://localhost:8080',
-        'webpack/hot/only-dev-server',
-        "./src/app/app.js"
-    ],
+    entry: {
+        app: [
+            'webpack-dev-server/client?http://localhost:8080',
+            'webpack/hot/only-dev-server',
+            "./src/app/app.js"
+        ],
+        vendors: ['react', 'react-dom', 'jquery']
+    },
     output: {
         path: path.resolve(__dirname, "build/"),
         publicPath: "build/",
         filename: "app.js",
+        chunkFilename: "[name].js",
     },
     resolve: {
         extensions: ['', '.js', '.jsx'],
@@ -25,6 +29,9 @@ module.exports = {
             query: {
                 presets: ['es2015', 'react']
             }
+        },{
+            test: /\.less$/,
+            loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader!less-loader")
         }, {
             test: /\.css?$/,
             loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader")
@@ -32,16 +39,20 @@ module.exports = {
             test: /\.(eot|woff|woff2|ttf|svg)$/,
             loader: 'url-loader'
         }, {
-            test:  /\.(png|jpg|gif)$/,
-            loader: "url-loader?limit=8192&name=/images/[name]-[hash].[ext]"
+            test: /\.(png|jpg|gif)$/,
+            loader: "url-loader?limit=8192&name=[name]-[hash].[ext]"
         }]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
-        new webpack.optimize.CommonsChunkPlugin('common.js'),
+        new webpack.optimize.CommonsChunkPlugin('vendors', '[name].js'),
         new ExtractTextPlugin("style.css", {
             allChunks: false
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            'jQuery': 'jquery'
         })
     ]
 };
