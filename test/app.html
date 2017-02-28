@@ -9,7 +9,7 @@
 <body ng-app="app">
     <div class="main">
         <div class="title" id="title">
-            <a class="download-btn" id="openIntentLink"  href="javascript:void(0);">打开APP</a>
+            <a class="download-btn" id="openIntentLink" href="javascript:void(0);">打开APP</a>
         </div>
     </div>
     <!-- <script type="text/javascript">
@@ -82,19 +82,29 @@
     <script>
     var getServerTime = function() {
         with(new XMLHttpRequest) {
-          open("GET", "/");
-          onreadystatechange = function(){
-            if(readyState >= 2 && getResponseHeader('Date')){
-              console.log(getResponseHeader('Date'))
-              var serverTime = new Date(getResponseHeader('Date')).getTime();
-              console.log("servertime: " + serverTime)
-              abort();
+            open("GET", "/");
+            onreadystatechange = function() {
+                if (readyState >= 2 && getResponseHeader('Date')) {
+                    console.log(getResponseHeader('Date'))
+                    var serverTime = new Date(getResponseHeader('Date')).getTime();
+                    console.log("servertime: " + serverTime)
+                    abort();
+                }
             }
-          }
-          send();
+            send();
         }
     };
+    // getServerTime();
     // setInterval(getServerTime, 1000);
+    var getServerTime_1 = function() {
+        var something = "/"; //任意同域资源，size越小越好
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", something, false);
+        xmlhttp.send();
+        console.log("服务器时间：" + new Date(xmlhttp.getResponseHeader("date"))); //自己解析响应头，不一定是"date"的
+        console.log("本机的时间：" + new Date());
+    };
+    // setInterval(getServerTime_1, 1000);
     </script>
 </body>
 

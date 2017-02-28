@@ -20,5 +20,12 @@ export default {
                 cb(null, require('./components/AboutMe/index').default)
             }, 'me')
         }
+    }, {
+        path: '/books',
+        getComponent: (nextState, cb) => {
+            return require.ensure([], (require) => {
+                cb(null, require('./components/Book/books').default)
+            }, 'books')
+        }
     }]
 }

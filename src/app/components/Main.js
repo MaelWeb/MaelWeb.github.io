@@ -40,7 +40,7 @@ export default class Main extends React.Component {
 
     render() {
         return (
-            <div className="index-layout">
+            <div className="index-layout" style={{height: `${window.screen.availHeight}px`}}>
             <div className="mac">
                 <div className={this.state.layout}><div id="ip-container" className={this.state.container}>
                     <header className="ip-header">
@@ -61,7 +61,7 @@ export default class Main extends React.Component {
                             <p>前端攻城狮，伪文艺青年</p>
                             <a href="/blog" className="btn">博客</a>
                             <Link to={{pathname: "/me"}} className="btn">简历</Link>
-                            <a href="/book" className="btn">书单</a>
+                            <Link to={{pathname: "/books"}} className="btn">书单</Link>
                         </div>
                     </div>
                 </div></div>

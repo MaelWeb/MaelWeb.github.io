@@ -36,6 +36,10 @@ export default class AboutMe extends React.Component {
         };
     }
 
+    componentWillUnmount() {
+        window.onscroll = null;
+    }
+
     render() {
         return (<div>
             <Header />
