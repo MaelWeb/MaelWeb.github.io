@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Under 7℃</title>
   <subtitle>游走在技术与艺术的边缘</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
   <link href="hynal.com/"/>
   <updated>2016-03-30T02:55:53.000Z</updated>
