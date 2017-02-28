@@ -2145,11 +2145,11 @@ sms://
       <category term="面试" scheme="hynal.com/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
-      <category term="CSS" scheme="hynal.com/tags/CSS/"/>
-    
       <category term="前端" scheme="hynal.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="面试" scheme="hynal.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="CSS" scheme="hynal.com/tags/CSS/"/>
     
   </entry>
   
@@ -2368,11 +2368,11 @@ sms://
       <category term="面试" scheme="hynal.com/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
+      <category term="HTML" scheme="hynal.com/tags/HTML/"/>
+    
       <category term="前端" scheme="hynal.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="面试" scheme="hynal.com/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="HTML" scheme="hynal.com/tags/HTML/"/>
     
   </entry>
   
