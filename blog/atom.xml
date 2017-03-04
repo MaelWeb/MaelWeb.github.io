@@ -905,15 +905,76 @@ sms://
     <link href="hynal.com/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8Djavascript%E7%AF%87/"/>
     <id>hynal.com/2016/02/15/面试那些事－javascript篇/</id>
     <published>2016-02-15T10:22:48.000Z</published>
-    <updated>2017-02-28T08:31:41.000Z</updated>
+    <updated>2017-03-04T03:46:44.000Z</updated>
     
     <content type="html"><![CDATA[<p>本文<a href="http://hynal.com/blog/2015/12/23/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>的一个分支。<br>姐妹篇：</p>
 <ul>
 <li><a href="http://hynal.com/blog/2016/01/28/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DHTML%E7%AF%87/">面试那些事－HTML篇</a></li>
 <li><a href="http://hynal.com/blog/2016/02/15/%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%8DCSS%E7%AF%87/">面试那些事－CSS篇</a></li>
 </ul>
-<p>[2017年02月28日]更新部分答案</p>
-<p><br><br><strong> 下面开始正文： </strong></p>
+<p>修改记录：<br>[2017年02月28日]更新部分答案<br>[2017年03月03日]添加新面试题</p>
+<h3 id="阿里面试题"><a href="#阿里面试题" class="headerlink" title="阿里面试题"></a>阿里面试题</h3><ul>
+<li><p>React跟其他的前端框架有什么区别？他有什么优点？比如说跟jQuery对比有哪些优势？</p>
+<blockquote>
+<p>侧重于UI, 也就是view层；单向的从数据到视图的渲染；不直接操作DOM，通过虚拟DOM，通过diff算法以最小的步骤作用到真实的DOM上，高性能；JSX;组件可复用性；<br><em>（根据自己的理解回答，这种题没什么标准答案）</em></p>
+</blockquote>
+</li>
+<li><p>React的生命周期知道么？分别是哪几个？</p>
+</li>
+</ul>
+<blockquote>
+<h3 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h3><ul>
+<li>首次实例化<ul>
+<li>getDefaultProps</li>
+<li>getInitialState</li>
+<li>componentWillMount</li>
+<li>render</li>
+<li>componentDidMount</li>
+</ul>
+</li>
+<li>实例化完成后的更新<ul>
+<li>getInitialState</li>
+<li>componentWillMount</li>
+<li>render</li>
+<li>componentDidMount</li>
+</ul>
+</li>
+</ul>
+<h3 id="存在期"><a href="#存在期" class="headerlink" title="存在期"></a>存在期</h3><p> 组件已存在时的状态改变</p>
+<ul>
+<li>componentWillReceiveProps</li>
+<li>shouldComponentUpdate</li>
+<li>componentWillUpdate</li>
+<li>render</li>
+<li>componentDidUpdate</li>
+</ul>
+<h3 id="销毁-amp-清理期"><a href="#销毁-amp-清理期" class="headerlink" title="销毁&amp;清理期"></a>销毁&amp;清理期</h3><ul>
+<li>componentWillUnmount</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>我们为了提高react性能，会使用哪些方法？</p>
+<blockquote>
+<p>1.shouldComponentUpdate: 通过判断关键数据来决定是否需要调用组件的render方法<br>2.键（Key）<br>3.immutable.js</p>
+</blockquote>
+</li>
+<li><p>Js的Array跟Object有什么不同？</p>
+</li>
+<li><p>如果我想获取一个页面上所有的dom，并判断他们的类型？用原生js你怎么做？</p>
+</li>
+<li><p>Jsonp的原理是什么？是怎样实现的？</p>
+</li>
+<li><p>你们跟后台交互数据是通常用什么数据类型？为什么选择它？</p>
+</li>
+<li><p>事件代理／委托在什么场景下使用？是怎么实现的？</p>
+</li>
+<li><p>Promise是什么？原理呢？</p>
+</li>
+<li><p>对js单线程是否了解？</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">       <span class="built_in">console</span>.log(<span class="number">1</span>);</div><div class="line">&#125;,<span class="number">0</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="number">2</span>);<span class="comment">//输出？</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong><strong>以下原有面试题：</strong></strong></p>
 <ul>
 <li>介绍js的基本数据类型。</li>
 </ul>
@@ -2145,11 +2206,11 @@ sms://
       <category term="面试" scheme="hynal.com/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
-      <category term="CSS" scheme="hynal.com/tags/CSS/"/>
-    
       <category term="前端" scheme="hynal.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="面试" scheme="hynal.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="CSS" scheme="hynal.com/tags/CSS/"/>
     
   </entry>
   
@@ -2368,11 +2429,11 @@ sms://
       <category term="面试" scheme="hynal.com/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
+      <category term="HTML" scheme="hynal.com/tags/HTML/"/>
+    
       <category term="前端" scheme="hynal.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="面试" scheme="hynal.com/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="HTML" scheme="hynal.com/tags/HTML/"/>
     
   </entry>
   
